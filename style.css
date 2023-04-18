@@ -1,6 +1,3 @@
-
-
-
 html,
 body {
   margin: 0;
@@ -9,20 +6,30 @@ body {
   height: 100%;
   overflow: hidden;
   color: white;
-  background-color: ;
   font-family: "PS3-rodin", sans-serif;
 	cursor: none;
 }
 
-.clock {
-	position: absolute;
-	right: 124px;
-	top: 71px;
-	font-size: 20.5px;
-	text-align: right;
-	user-select: none;
-	font-family: "PS3-rodin";
-	text-shadow: 3px 3px 6px #2e2e2e;
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  animation: fadeIn 10s; /* change this such that it fades in and out depending on if ur on welcome or not */
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .bg {
@@ -65,7 +72,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background: -webkit-linear-gradient(253deg, rgb(46, 29, 158) 0%, rgb(21, 18, 84) 72%);
 	cursor: none;
 }
 #xmb {
@@ -176,4 +183,8 @@ a {
 	width: 100px;
 	font-size: 18px;
 	cursor: none;
+}
+
+#xmb .cell > label:hover {
+  text-shadow: 0px 0px 0px #ffffff;
 }

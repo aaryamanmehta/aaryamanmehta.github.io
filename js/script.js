@@ -1,12 +1,10 @@
 var ICON_SIZE = 100;
 var PADDING = 70;
 
-//todo: pull model from XHR or some
-
 var model = {
   cursor: {
-    x: 5,
-    y: 6 },
+    x: 0,
+    y: 0 },
 
   columns: {
     "Users": {
@@ -16,9 +14,8 @@ var model = {
       active: false,
       icon: "icons/users.png",
       items: [
-			{ title: "Turn Off System", subtitle: "", active: false, icon: "icons/power.png", href: "" },
-      { title: "Add User", subtitle: "", active: false, icon: "icons/add-user.png", href: "" },
-      { title: "User", subtitle: "", active: true, icon: "icons/000.png", href: "" }] },
+			{ title: "Welcome", subtitle: "", active: false, icon: "icons/power.png", href: "" },
+      { title: "Aaryaman Mehta", subtitle: "", active: true, icon: "icons/000.png", href: "" }] },
 
 
     "Settings": {
@@ -134,10 +131,6 @@ var model = {
       	] }
 	} };
 
-
-
-
-
 //add zero position to each column and item
 _.each(model.columns, c => {
   c.position = { x: 0, y: 0 };
@@ -252,47 +245,26 @@ var xmbVue = new Vue({
 
 // handle movement based on keys
 $('body').on('keyup', function (e) {
-  if (e.key == "ArrowUp") {
+  if (e.key == "ArrowUp" || e.key == "W" || e.key == "w") {
     xmbVue.handleKey('y', -1);
-  } else if (e.key == "ArrowDown") {
+  } else if (e.key == "ArrowDown" || e.key == "S" || e.key == "s") {
     xmbVue.handleKey('y', 1);
-  } else if (e.key == "ArrowLeft") {
+  } else if (e.key == "ArrowLeft" || e.key == "A" || e.key == "a") {
     xmbVue.handleKey('x', -1);
-  } else if (e.key == "ArrowRight") {
+  } else if (e.key == "ArrowRight" || e.key == "D" || e.key == "d") {
     xmbVue.handleKey('x', 1);
   }
 });
 
-$('body').on("mousewheel", _.throttle(scrollHandler, 10));
-
-function scrollHandler(e) {
-  console.log(e);
-  if (e.deltaX) {
-    xmbVue.handleKey('x', Math.sign(e.deltaX));
-  }
-  if (e.deltaY) {
-    xmbVue.handleKey('y', Math.sign(e.deltaY));
-  }
-};
-
 $('body').on('keyup', function (e) {
 	if (e.key == "Enter") {
-		linkforward();
+    linkforward();
 	}
 })
 
 function linkforward() {
-	location.href = document.getElementsByClassName('.submenu.active').href
+  var currentSubmenu = xmbVue.columnsArray[xmbVue.cursor.x].items[xmbVue.cursor.y];
+  if (currentSubmenu.href) {
+    window.location.href = currentSubmenu.href;
+  }
 	};
-
-function display_c(){
-var refresh=1000; // Refresh rate in milli seconds
-mytime=setTimeout('display_ct()',refresh)
-}
-
-function display_ct() {
-var x = new Date().toLocaleTimeString('en-US', {hour: 'numeric', minute: 'numeric'})
-var y = new Date().toLocaleDateString('en-GB', {month:'numeric', day: 'numeric'})
-document.getElementById('ct').innerHTML = y + ' ' +x;
-display_c();
- }

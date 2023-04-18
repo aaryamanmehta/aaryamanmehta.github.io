@@ -4,22 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>PS3 Simulator</title>
+  <title>Aaryaman Mehta Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto">
 	<link rel="stylesheet" href="fonts.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
-<script src="https://unpkg.com/vue-gamepad/dist/vue-gamepad.min.js"></script>
+  <script src="https://unpkg.com/vue-gamepad/dist/vue-gamepad.min.js"></script>
 	<script src="js/startup.js"></script>
 </head>
 
-<body onload="display_ct();">
- 
-<div class="top"></div>
-	<div class="clock"><span id='ct'></span></div>
-<div id="xmb-contain">
+<body>
+  <video id = "video" autoplay loop muted>
+    <source src="./icons/vid.mp4" type="video/mp4">
+  </video>
+  <div id="xmb-contain">
   <div id="xmb">
     <ul>
       <li class="column" v-for="column,index in columns" v-bind:class="{active:column.active}" v-bind:style="{left:column.position.x+'px'}">
