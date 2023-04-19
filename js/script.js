@@ -2,6 +2,7 @@ var ICON_SIZE = 100;
 var PADDING = 70;
 var yPADDING = 40;
 var audio = new Audio('./icons/nav.mp3');
+var startup = new Audio('./icons/startup.mp3');
 
 var model = {
 
@@ -310,3 +311,5 @@ function linkbackward() {
   popup.classList.remove("visible")
   xmb.classList.remove("invisible");
 }
+
+startup.play();
