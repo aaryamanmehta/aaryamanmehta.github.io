@@ -61,7 +61,14 @@ body {
 	display: box;
 	top: 30%;
 	left: 35%;
+  transition: opacity 1s ease-out;
 }
+
+#xmb.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
 #xmb > ul {
   display: flex;
   flex: 1 1 auto;
@@ -125,7 +132,6 @@ body {
   text-align: left;
   text-shadow: 0px 0px 0px #ffffff;
   font-size: 20px;
-  text-transform: capitalize;
   cursor: none;
 	width: 500px;
 }
@@ -200,5 +206,36 @@ a {
   align-items: center;
   justify-content: center;
   z-index: 9999; /* ensure popup is on top of other content */
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out
+}
+
+.popup::before,
+.popup::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  opacity: 0.4;
+  background-color: white;
+}
+
+.popup::before {
+  top: 20%;
+}
+
+.popup::after {
+  content: "⌫ Backspace";
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  line-height: 100px;
+}
+
+.popup.visible {
+  opacity: 1;
 }

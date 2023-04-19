@@ -17,7 +17,7 @@ var model = {
       active: false,
       icon: "icons/users.png",
       items: [
-			{ title: "Welcome!", subtitle: "", active: false, icon: "icons/power.png", href: "" },
+			{ title: "Welcome!", subtitle: "Navigate using the arrow/WASD, enter, and backspace keys!", active: false, icon: "icons/power.png", href: "" },
       { title: "Aaryaman Mehta", subtitle: "About Me", active: true, icon: "icons/000.png", href: "" }] },
 
     "Projects": {
@@ -63,8 +63,7 @@ var model = {
       active: false,
       icon: "icons/video.png",
       items: [
-      { title: "Email me!", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
-      { title: "Text me!", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
+      { title: "Contact me!", subtitle: "", active: false, icon: "icons/folder.png", href: "mailto:aaryaman.s.m@gmail.com" },
       { title: "LinkedIn", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
       { title: "GitHub", subtitle: "", active: false, icon: "icons/upload.png", href: "" },] },
 		
@@ -235,7 +234,6 @@ $('body').on('keydown', function (e) {
   if (e.key == "Enter") {
     linkforward();
     audio.play();
-    $('body').off('keyup');    
   }
 });
 
@@ -247,22 +245,68 @@ $('body').on('keydown', function (e) {
   }
 });
 
-
-
 function linkforward() {
   var currentSubmenu = xmbVue.columnsArray[xmbVue.cursor.x].items[xmbVue.cursor.y];
   if (currentSubmenu.href) {
     window.location.href = currentSubmenu.href;
   }
-  else {
-    var popup = document.getElementById("popup");
-    popup.style.visibility = "visible";
+  else if (currentSubmenu.title === "Aaryaman Mehta") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "Aaryaman Mehta blah blah blah";
+      $('body').off('keyup');    
+    }
+    else if (currentSubmenu.title === "MeetMeHalfway") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "meetmehalfaay blah blah blah";
+      $('body').off('keyup');    
+    }
+    else if (currentSubmenu.title === "EleNa") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "EleNa blah blah blah";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "DynaBoard") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "DynaBoard blah blah blah";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Customer Service Associate") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "Customer Service Associate blah blah blah";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Software Development Team Intern") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "Software Development Team Intern blah blah blah";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Front-End Developer Intern") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "Front-End Developer Intern blah blah blah";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "University of Massachusetts Amherst") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "University of Massachusetts Amherst blah blah blah";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Canadian International School (Bangalore)") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.textContent = "Canadian International School (Bangalore) blah blah blah";
+      $('body').off('keyup');
+    }
   }
-	};
 
 function linkbackward() {
-  var popup = document.getElementById("popup");
-  if (popup.style.visibility == "visible") {
-    popup.style.visibility = "hidden";
-  }
+  popup.classList.remove("visible")
+  xmb.classList.remove("invisible");
 }
