@@ -1,7 +1,10 @@
 var ICON_SIZE = 100;
 var PADDING = 70;
+var yPADDING = 40;
+var audio = new Audio('./icons/nav.mp3');
 
 var model = {
+
   cursor: {
     x: 0,
     y: 0 },
@@ -14,121 +17,72 @@ var model = {
       active: false,
       icon: "icons/users.png",
       items: [
-			{ title: "Welcome", subtitle: "", active: false, icon: "icons/power.png", href: "" },
-      { title: "Aaryaman Mehta", subtitle: "", active: true, icon: "icons/000.png", href: "" }] },
+			{ title: "Welcome!", subtitle: "", active: false, icon: "icons/power.png", href: "" },
+      { title: "Aaryaman Mehta", subtitle: "About Me", active: true, icon: "icons/000.png", href: "" }] },
 
-
-    "Settings": {
+    "Projects": {
       index: 1,
-      title: "Settings",
+      title: "Projects",
       selectedIndex: 0,
       active: false,
       icon: "icons/settings.png",
       items: [
-      { title: "System Update", subtitle: "", active: false, icon: "icons/system-update.png", href:"" },
-      { title: "Game Settings", subtitle: "", active: false, icon: "icons/game-settings.png", href:"" },
-      { title: "Video Settings", subtitle: "", active: false, icon: "icons/video-settings.png", href: "" },
-      { title: "Music Settings", subtitle: "", active: false, icon: "icons/music-settings.png", href: "" },
-      { title: "Chat Settings", subtitle: "", active: false, icon: "icons/chat-settings.png", href: "" },
-      { title: "System Settings", subtitle: "", active: false, icon: "icons/system-settings.png", href: "" },
-      { title: "Theme Settings", subtitle: "", active: false, icon: "icons/theme-settings.png", href: "" },
-      { title: "Date and Time Settings", subtitle: "", active: false, icon: "icons/time-settings.png", href: "" },
-      { title: "Power Save Settings", subtitle: "", active: false, icon: "icons/power-settings.png", href: "" },
-      { title: "Accessory Settings", subtitle: "", active: false, icon: "icons/acc-settings.png", href: "" },
-      { title: "Printer Settings", subtitle: "", active: false, icon: "icons/print-settings.png", href: "" },
-      { title: "Display Settings", subtitle: "", active: false, icon: "icons/display-settings.png", href: "" },
-      { title: "Sound Settings", subtitle: "", active: false, icon: "icons/sound-settings.png", href: "" },
-      { title: "Security Settings", subtitle: "", active: false, icon: "icons/privacy-settings.png", href: "" },
-      { title: "Remote Play Settings", subtitle: "", active: false, icon: "icons/remote-settings.png", href: "" },
+      { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/system-update.png", href:"" },
+      { title: "EleNa", subtitle: "", active: false, icon: "icons/game-settings.png", href:"" },
+      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/video-settings.png", href: "" },
       { title: "Network Settings", subtitle: "Adjusts settings for the Internet connection.", active: false, icon: "icons/network-settings.png", href: "" },]
 			 	},
 
-    "Photo": {
+    "Experience": {
       index: 2,
-      title: "Photo",
+      title: "Experience",
       selectedIndex: 0,
       active: false,
       icon: "icons/photo.png",
       items: [
-      { title: "Search for Media Servers", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
-      { title: "Photo Gallery", subtitle: "", active: false, icon: "icons/photo-gallery.png", href: ""},
-      { title: "Playlists", subtitle: "", active: false, icon: "icons/playlist.png", href: "" },] },
+      { title: "Customer Service Associate", subtitle: "Residential Life Services at UMass Amherst", active: false, icon: "icons/server-search.png", href:"" },
+      { title: "Software Development Team Intern", subtitle: "ISO New England (ISO-NE)", active: false, icon: "icons/photo-gallery.png", href: ""},
+      { title: "Front-End Developer Intern", subtitle: "Aspec Sciré", active: false, icon: "icons/playlist.png", href: "" },] },
 
 
-    "Music": {
+    "Education": {
       index: 3,
-      title: "Music",
+      title: "Education",
       selectedIndex: 0,
       active: false,
       icon: "icons/music.png",
       items: [
-      { title: "Search for Media Servers", subtitle: "", active: false, icon: "icons/server-search.png" },
-      { title: "Playlists", subtitle: "", active: false, icon: "icons/playlist.png", href: "" },] },
+      { title: "University of Massachusetts Amherst", subtitle: "B.S in Computer Science", active: false, icon: "icons/server-search.png" },
+      { title: "Canadian International School (Bangalore)", subtitle: "International Baccalaureate Diploma", active: false, icon: "icons/playlist.png", href: "" },] },
 
 
-    "Video": {
+    "Social": {
       index: 4,
-      title: "Video",
+      title: "Social",
       selectedIndex: 0,
       active: false,
       icon: "icons/video.png",
       items: [
-      { title: "BD Data Utility", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
-      { title: "Search for Media Servers", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
-      { title: "Video Editor & Uploader", subtitle: "", active: false, icon: "icons/upload.png", href: "" },] },
+      { title: "Email me!", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
+      { title: "Text me!", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
+      { title: "LinkedIn", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
+      { title: "GitHub", subtitle: "", active: false, icon: "icons/upload.png", href: "" },] },
 		
-			"Game": {
-      	index: 5,
-      	title: "Game",
-      	selectedIndex: 0,
-      	active: false,
-      	icon: "icons/play.png",
-      	items: [
-					{ title: "PS Vita System Application Utility", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
-					{ title: "Game Data Utility", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
-					{ title: "Memory Card Utility", subtitle: "", active: false, icon: "icons/memory-card.png", href: "" },
-					{ title: "Saved Data Utility (minis/PSP™)", subtitle: "", active: false, icon: "icons/folder-remote.png", href: "" },
-					{ title: "Saved Data Utility (PS3™)", subtitle: "", active: false, icon: "icons/folder-game.png", href: "" },
-					{ title: "PlayStation®Store", subtitle: "", active: false, icon: "icons/store-logo.png", href: "" },
-					{ title: "Game", subtitle: "", active: false, icon: "album", href: "https://play.geforcenow.com/" }
-      	] },
-		
-			"Network": {
-      	index: 6,
-      	title: "Network",
-      	selectedIndex: 0,
-      	active: false,
-      	icon: "icons/network.png",
-      	items: [
-				{ title: "Online Instruction Manuals", subtitle: "", active: false, icon: "icons/question.png", href: "" },
-					{ title: "Remote Play", subtitle: "Use a device that supports remote play (such as a PS Vita or PSP'tm' system) to operate this system over a network. Go to [Settings] > [Remote Play Settings] > [Register Device] and register the remote play device.", active: false, icon: "icons/remote.png", href: "" },
-					{ title: "Internet Browser", subtitle: "", active: false, icon: "icons/www.png", href: "" },
-					{ title: "Internet Search", subtitle: "", active: false, icon: "icons/search.png", href: "" },
-      	] },
-		
-		"PlayStation™Network": {
-      	index: 7,
-      	title: "PlayStation™Network",
-      	selectedIndex: 0,
-      	active: false,
-      	icon: "icons/psn.png",
-      	items: [
-					{ title: "Sign Up", subtitle: "", active: false, icon: "icons/sign-up.png", href: "" },
-					{ title: "What's New", subtitle: "", active: false, icon: "icons/whats-new.png", href: "" },
-					{ title: "Trophy Collection", subtitle: "", active: false, icon: "icons/trophy.png", href: "" },
-					{ title: "PlayStation Plus", subtitle: "", active: false, icon: "icons/psplus.png", href: "" },
-					{ title: "PlayStation Store", subtitle: "", active: false, icon: "icons/store-logo.png", href: "" }
-      	] },
-
-			"Friends": {
-      	index: 8,
-      	title: "Friends",
-      	selectedIndex: 0,
-      	active: false,
-      	icon: "icons/friends.png",
-      	items: [
-				{ title: "", subtitle: "", active: false, icon: "", href: "" }
-      	] }
+    "Skills": {
+      index: 5,
+      title: "Skills",
+      selectedIndex: 0,
+      active: false,
+      icon: "icons/play.png",
+      items: [
+        { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
+        { title: "JavaScript", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
+        { title: "React", subtitle: "", active: false, icon: "icons/memory-card.png", href: "" },
+        { title: "PostgreSQL", subtitle: "", active: false, icon: "icons/folder-remote.png", href: "" },
+        { title: "Node.JS", subtitle: "", active: false, icon: "icons/folder-game.png", href: "" },
+        { title: "Java", subtitle: "", active: false, icon: "icons/store-logo.png", href: "" },
+        { title: "Python", subtitle: "", active: false, icon: "album", href: "https://play.geforcenow.com/" }
+      ] },
 	} };
 
 //add zero position to each column and item
@@ -167,7 +121,17 @@ var xmbVue = new Vue({
 
     },
     highlightCell: function (column, row) {
+    const firstRowPadding = 20;
+    // Check if the user is on the first column and first item
+    const isOnFirstColumn = column === 0;
+    const isOnFirstItem = column === 0 && row === 0;
 
+    // Add or remove the hide-video class based on the user's position
+    if (isOnFirstColumn && isOnFirstItem) {
+      document.getElementById("video").classList.add("hide-video");
+    } else {
+      document.getElementById("video").classList.remove("hide-video");
+    }
       console.log(column, row);
       //update position of elements as well
       var xAccum = (-column - 1) * (ICON_SIZE + PADDING);
@@ -178,7 +142,7 @@ var xmbVue = new Vue({
 
       _.each(this.columns, (col, colKey) => {
         col.active = false;
-        yAccum = -(ICON_SIZE + PADDING) * (row + 1);
+        yAccum = -(ICON_SIZE + yPADDING) * (row + 1);
 
         col.position.x = xAccum;
         xAccum += ICON_SIZE + PADDING;
@@ -194,22 +158,29 @@ var xmbVue = new Vue({
             item.active = false;
           }
 
-          if (rowN == row) {
-            yAccum += ICON_SIZE + PADDING;
+          // if item is in the first row, add padding
+          if (rowN === 0) {
+            yAccum += firstRowPadding;
           }
-          yAccum += ICON_SIZE + PADDING;
+
+          if (rowN == row) {
+            yAccum += ICON_SIZE + yPADDING;
+          }
+          yAccum += ICON_SIZE + yPADDING;
           item.position.y = yAccum;
 
         });
       });
       this.cursor.y = row;
       this.cursor.x = column;
-    } },
+    }
+  },
 
   watch: {
     cursor: function (e) {
       console.log('cursor mutated', e);
-    } },
+    }
+  },
 
   computed: {
     nColumns: function () {
@@ -244,7 +215,8 @@ var xmbVue = new Vue({
 
 
 // handle movement based on keys
-$('body').on('keyup', function (e) {
+function movementKeys() {
+  $('body').on('keyup', function (e) {
   if (e.key == "ArrowUp" || e.key == "W" || e.key == "w") {
     xmbVue.handleKey('y', -1);
   } else if (e.key == "ArrowDown" || e.key == "S" || e.key == "s") {
@@ -254,17 +226,43 @@ $('body').on('keyup', function (e) {
   } else if (e.key == "ArrowRight" || e.key == "D" || e.key == "d") {
     xmbVue.handleKey('x', 1);
   }
+  audio.play();
+});
+};
+movementKeys();
+
+$('body').on('keydown', function (e) {
+  if (e.key == "Enter") {
+    linkforward();
+    audio.play();
+    $('body').off('keyup');    
+  }
 });
 
-$('body').on('keyup', function (e) {
-	if (e.key == "Enter") {
-    linkforward();
-	}
-})
+$('body').on('keydown', function (e) {
+  if (e.key == "Backspace") {
+    linkbackward();
+    audio.play();
+    movementKeys();
+  }
+});
+
+
 
 function linkforward() {
   var currentSubmenu = xmbVue.columnsArray[xmbVue.cursor.x].items[xmbVue.cursor.y];
   if (currentSubmenu.href) {
     window.location.href = currentSubmenu.href;
   }
+  else {
+    var popup = document.getElementById("popup");
+    popup.style.visibility = "visible";
+  }
 	};
+
+function linkbackward() {
+  var popup = document.getElementById("popup");
+  if (popup.style.visibility == "visible") {
+    popup.style.visibility = "hidden";
+  }
+}

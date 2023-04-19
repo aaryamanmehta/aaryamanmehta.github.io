@@ -16,11 +16,16 @@
 </head>
 
 <body>
-  <video id = "video" autoplay loop muted>
+  <audio id="nav" src="./icons/nav.mp3"></audio>
+
+  <video id="video" v-if="column.index != 0" autoplay loop muted>
     <source src="./icons/vid.mp4" type="video/mp4">
-  </video>
+  </video>  
+
   <div id="xmb-contain">
+
   <div id="xmb">
+    
     <ul>
       <li class="column" v-for="column,index in columns" v-bind:class="{active:column.active}" v-bind:style="{left:column.position.x+'px'}">
         <div class="cell" v-bind:class="{active:column.active}" v-on:click="highlightCell(column.index,0)"><img class="material-icons xmb-icon" v-bind:src="column.icon"></img>
@@ -30,15 +35,28 @@
           <li class="cell submenu" v-for="item,itemIndex in column.items" v-bind:class="{active:item.active}" v-bind:style="{top:item.position.y+'px'}" v-on:click="highlightCell(column.index,itemIndex)" v-bind:href="item.href"><a><img class="material-icons xmb-icon" v-bind:src="item.icon"></img>
               <label>{{item.title}}
                 <label class="subtitle">{{item.subtitle}}</label>
-              </label></a></li>
-					
+
+              </label>
+
+            </a>
+   
+            </li>  
+       
         </ul>
+
       </li>
+      
     </ul>
+    
   </div>
-	
+  
 </div>
-  <script src="js/script.js"></script> 
+
+<div id="popup" class="popup">
+<p>hello</p>
+</div>
+
+  <script type="module" src="js/script.js"></script> 
 </body>
 
 </html>

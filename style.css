@@ -17,19 +17,14 @@ body {
   width: 100%;
   height: 100%;
   z-index: 0;
-  animation: fadeIn 10s; /* change this such that it fades in and out depending on if ur on welcome or not */
   -o-object-fit: cover;
   object-fit: cover;
   pointer-events: none;
+  transition: opacity 2s ease-out;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.hide-video {
+  opacity: 0;
 }
 
 .bg {
@@ -43,28 +38,7 @@ body {
   height: 100%;
   z-index: -1;
 }
-.top {
-  position: absolute;
-  top: 59px;
-  right: -2px;
-	font-size: 21px;
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 4px 0 0 4px;
-	border-color: #a8a8a8;
-	width: 467px;
-	height: 43px;
-	font-family: "rodin", sans-serif;
-	text-align: center;
-	cursor: none;
-	display: block;
-	box-shadow: 	inset 0px 0px 0px 0px yellow,
-                inset 0px 0px 0px 0px green,
-                inset 0px 0px 0px 0px blue,
-                inset 0px 0px 5px .7px #b0b0b0;
-	background:  #7e7e7e;
-	border-right: transparent;
-}
+
 #xmb-contain {
   width: 100%;
   height: 100%;
@@ -85,14 +59,14 @@ body {
   margin-right: 100px;
   user-select: none;
 	display: box;
-	top: 144px;
-	left: 509px;
+	top: 30%;
+	left: 35%;
 }
 #xmb > ul {
   display: flex;
   flex: 1 1 auto;
   position: absolute;
-  top: 10%;
+  top: 0%;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
@@ -105,31 +79,34 @@ body {
   list-style-type: none;
   position: absolute;
 }
+
 #xmb li.column > ul {
   position: relative;
   display: flex;
   flex-direction: column;
 }
+
 #xmb .cell {
   width: 100px;
   height: 100px;
   background-color: transparent;
-  margin: 10px;
   opacity: 0.4;
   position: absolute;
   transition: all 0.3s;
   cursor: none;
 }
+
 #xmb .cell.active {
   opacity: 1;
-	
 }
+
 #xmb .column:not(.active) .cell.submenu:not(.active) {
   display: none;
   opacity: 0;
 }
+
 #xmb .column {
-  transition: all 0.3s;
+  transition: all 0.5s;
   flex: 0 1 auto;
   margin: 0 0;
 }
@@ -139,9 +116,10 @@ body {
 .xmb-icon {
   text-align: center;
   width: 100%;
-  font-size: 100px;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  /* font-size: 100px; */
+  /* text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
 }
+
 #xmb label {
   display: block;
   text-align: left;
@@ -151,24 +129,27 @@ body {
   cursor: none;
 	width: 500px;
 }
+
 #xmb .cell.submenu,
 #xmb .cell.submenu > * {
   line-height: 100px;
 }
 #xmb .submenu label:not(.subtitle) {
   position: absolute;
-  top: 0;
-  line-height: 50px;
-  margin-left: 100px;
-  font-size: 30px;
+  top: 0px;
+  line-height: 90px;
+  margin-left: 105px;
+  font-size: 20px;
 }
+
 #xmb .submenu label.subtitle {
-  position: absolute;
-  top: 557px;
-  margin-left: 0;
-  font-size: 19px;
-  line-height: 0;
+  font-size: 13px;
+  margin-top: -60px;
+  margin-left: 2px;
+  animation: none !important;
+  -webkit-animation: none !important;
 }
+
 a {
   color: inherit;
   cursor: none;
@@ -180,11 +161,44 @@ a {
 
 #xmb .cell > label {
 	text-align: center;
+  padding-top: 15px;
 	width: 100px;
-	font-size: 18px;
+	font-size: 15px;
 	cursor: none;
 }
 
-#xmb .cell > label:hover {
-  text-shadow: 0px 0px 0px #ffffff;
+#xmb .cell.submenu.active label {
+  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #d3d3d3, 0 0 2px #acacac, 0 0 2px #b1afaf, 0 0 5px #9b9b9b;
+  }
+  to {
+    text-shadow: 0 0 5px #dfdfdf, 0 0 8px #c9c9c9, 0 0 15px #b6b6b4, 0 0 20px #b9b9b9;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #d3d3d3, 0 0 2px #acacac, 0 0 2px #b1afaf, 0 0 5px #9b9b9b;
+  }
+  to {
+    text-shadow: 0 0 5px #dfdfdf, 0 0 8px #c9c9c9, 0 0 15px #b6b6b4, 0 0 20px #b9b9b9;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* ensure popup is on top of other content */
+  visibility: hidden;
 }
