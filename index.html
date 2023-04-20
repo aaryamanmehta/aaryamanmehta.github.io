@@ -16,15 +16,42 @@
 </head>
 
 <body>
+  <audio id="startup" src="./icons/startup.mp3" muted></audio>
+  <div id="landingPage">
+      <h1>Aaryaman Mehta</h1>
+      <p>Welcome to my PS3-inspired portfolio!</p>
+      <p style="font-size: 20px; line-height: 2.5">↵ Enter</p>
+  </div>
+  <script>
+      document.addEventListener("keydown", function(event) {
+          if (event.keyCode === 13) {
+              var audio = document.getElementById('startup');
+              audio.muted = false;
+              audio.volume = 0.3;
+              audio.play();        
+              document.querySelector('#landingPage h1').classList.add('opaque');
+              document.querySelectorAll('#landingPage p').forEach(function(p) {
+                p.classList.add('opaque');
+              });
+              // wait 3 seconds before showing the div
+              setTimeout(function() {
+                var hiddenDivs = document.querySelectorAll('.hidden');
+                hiddenDivs.forEach(function(div) {
+                  div.classList.remove('hidden');
+                  div.classList.add('appear');
+                });}, 2500);
+          }
+      });
+  </script>
+
   <audio id="nav" src="./icons/nav.mp3"></audio>
-  <audio id="startup" src="./icons/startup.mp3"></audio>
-  <video id="video" v-if="column.index != 0" autoplay loop muted>
+  <video id="video" class="hide-video" v-if="column.index != 0" autoplay loop muted>
     <source src="./icons/vid.mp4" type="video/mp4">
   </video>  
 
-  <div id="xmb-contain">
+  <div id="xmb-contain" class="hidden">
 
-  <div id="xmb">
+  <div id="xmb" class="hidden">
     
     <ul>
       <li class="column" v-for="column,index in columns" v-bind:class="{active:column.active}" v-bind:style="{left:column.position.x+'px'}">

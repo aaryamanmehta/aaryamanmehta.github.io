@@ -2,8 +2,6 @@ var ICON_SIZE = 100;
 var PADDING = 70;
 var yPADDING = 40;
 var audio = new Audio('./icons/nav.mp3');
-var startup = new Audio('./icons/startup.mp3');
-
 var model = {
 
   cursor: {
@@ -118,7 +116,6 @@ var xmbVue = new Vue({
       }
 
       this.highlightCell(this.cursor.x, this.cursor.y);
-
     },
     highlightCell: function (column, row) {
     const firstRowPadding = 20;
@@ -311,5 +308,3 @@ function linkbackward() {
   popup.classList.remove("visible")
   xmb.classList.remove("invisible");
 }
-
-startup.play();

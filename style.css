@@ -239,3 +239,45 @@ a {
 .popup.visible {
   opacity: 1;
 }
+
+#landingPage {
+  background-image: -webkit-linear-gradient(253deg, rgb(46, 29, 158) 0%, rgb(21, 18, 84) 72%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 2.5%;
+  line-height: 1.5;
+}
+
+#landingPage h1 {
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #dadada;
+  text-shadow: 2px 2px 5px black;
+  transition: opacity 3s ease-out;
+}
+
+#landingPage p {
+  font-size: 32px;
+  margin-top: -40px;
+  letter-spacing: -2px;
+  color: #dadada;
+  text-shadow: 2px 2px 5px black;
+  transition: opacity 3s ease-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+.opaque {
+  opacity: 0;
+}
