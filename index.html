@@ -23,26 +23,36 @@
       <p style="font-size: 20px; line-height: 2.5">↵ Enter</p>
   </div>
   <script>
-      document.addEventListener("keydown", function(event) {
-          if (event.keyCode === 13) {
-              var audio = document.getElementById('startup');
-              audio.muted = false;
-              audio.volume = 0.3;
-              audio.play();        
-              document.querySelector('#landingPage h1').classList.add('opaque');
-              document.querySelectorAll('#landingPage p').forEach(function(p) {
-                p.classList.add('opaque');
-              });
-              // wait 3 seconds before showing the div
-              setTimeout(function() {
-                var hiddenDivs = document.querySelectorAll('.hidden');
-                hiddenDivs.forEach(function(div) {
-                  div.classList.remove('hidden');
-                  div.classList.add('appear');
-                });}, 2500);
-          }
+    function StartUp() {
+      var audio = document.getElementById('startup');
+      audio.muted = false;
+      audio.volume = 0.3;
+      audio.play();        
+      document.querySelector('#landingPage h1').classList.add('opaque');
+      document.querySelectorAll('#landingPage p').forEach(function(p) {
+        p.classList.add('opaque');
       });
+      // wait 3 seconds before showing the div
+      setTimeout(function() {
+        var hiddenDivs = document.querySelectorAll('.hidden');
+        hiddenDivs.forEach(function(div) {
+          div.classList.remove('hidden');
+          div.classList.add('appear');
+        });
+      }, 2500);
+      // remove the event listener to prevent further playback
+      document.removeEventListener("keydown", handleKeyPress);
+    }
+  
+    function handleKeyPress(event) {
+      if (event.keyCode === 13) {
+        StartUp();
+      }
+    }
+  
+    document.addEventListener("keydown", handleKeyPress);
   </script>
+  
 
   <audio id="nav" src="./icons/nav.mp3"></audio>
   <video id="video" class="hide-video" v-if="column.index != 0" autoplay loop muted>
