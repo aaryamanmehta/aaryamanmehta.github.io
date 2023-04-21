@@ -312,13 +312,13 @@ function linkforward() {
     else if (currentSubmenu.title === "Web Programming") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Web Programming<br><br>Currently taking<br><br>Develops web programming experience, including HTML, CSS, JavaScript, AJAX, JavaScript libraries and web security.</p>";
+      popup.innerHTML = "<p>Web Programming<br><br><i>Currently taking</i><br><br>Develops web programming experience, including HTML, CSS, JavaScript, AJAX, JavaScript libraries and web security.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Practice and Applications of Data Management") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Practice and Applications of Data Management<br><br>Currently taking<br><br>Develops data management experience, including SQL, relational schema design, basic transaction implementation, and data visualization tools.</p>";
+      popup.innerHTML = "<p>Practice and Applications of Data Management<br><br><i>Currently taking</i><br><br>Develops data management experience, including SQL, relational schema design, basic transaction implementation, and data visualization tools.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Data Structures") {
@@ -330,7 +330,7 @@ function linkforward() {
     else if (currentSubmenu.title === "Theory and Practice of Software Engineering") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Theory and Practice of Software Engineering<br><br>Currently taking<br><br>Develops software engineering experience, including requirements engineering, software testing, program analysis and automated software engineering.</p>";
+      popup.innerHTML = "<p>Theory and Practice of Software Engineering<br><br><i>Currently taking</i><br><br>Develops software engineering experience, including requirements engineering, software testing, program analysis and automated software engineering.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "University of Massachusetts Amherst") {
