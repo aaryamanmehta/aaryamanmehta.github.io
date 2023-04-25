@@ -28,7 +28,10 @@ var model = {
       items: [
       { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/www.png", href:"" },
       { title: "EleNa", subtitle: "", active: false, icon: "icons/www.png", href:"" },
-      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/www.png", href: "" },]},
+      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/www.png", href: "" },
+      { title: "Seam Carving", subtitle: "", active: false, icon: "icons/www.png", href: "" },
+      { title: "Ray Tracing", subtitle: "", active: false, icon: "icons/www.png", href: "" },
+      ]},
 
     "Experience": {
       index: 2,
@@ -49,10 +52,12 @@ var model = {
       icon: "icons/coursework.png",
       items: [ //could always add more coursework
         { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/algorithm.png", href:"" },
+        { title: "Data Structures", subtitle: "", active: false, icon: "icons/photo-gallery.png", href: ""},
         { title: "Web Programming", subtitle: "", active: false, icon: "icons/network.png", href: ""},
         { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
-        { title: "Data Structures", subtitle: "", active: false, icon: "icons/photo-gallery.png", href: ""},
-        { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/playlist.png", href: "" },] },
+        { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/playlist.png", href: "" },
+        { title: "Introduction to Computer Graphics", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
+        { title: "Artificial Intelligence", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },] },
 
     "Education": {
       index: 4,
@@ -245,10 +250,17 @@ $('body').on('keydown', function (e) {
 });
 
 $('body').on('keydown', function (e) {
+  // get the popup menu
+  var popup = document.getElementById("popup");
   if (e.key == "Backspace") {
-    linkbackward();
-    audio.play();
-    movementKeys();
+    // if the popup menu is visible
+    if (popup.classList.contains("visible")) {
+      linkbackward();
+      audio.play();
+      movementKeys();  
+    } else {
+      // do nothing
+    }
   }
 });
 
@@ -316,6 +328,18 @@ function linkforward() {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
       popup.innerHTML = "<p>Practice and Applications of Data Management<br><br><i>Currently taking</i><br><br>Develops data management experience, including SQL, relational schema design, basic transaction implementation, and data visualization tools.</p>";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Introduction to Computer Graphics") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p>Introduction to Computer Graphics<br><br>Introduces fundamental concepts of 2D and 3D computer graphics, such as image processing, 2D/3D modelling, 3D graphics pipeline, WebGL, shading, texture mapping and ray tracing.</p>";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Artificial Intelligence") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p>Artificial Intelligence<br><br>Introduces AI concepts, such as search strategies, knowledge representation, machine learning, and formal logic.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Data Structures") {
