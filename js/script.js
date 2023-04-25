@@ -24,35 +24,32 @@ var model = {
       title: "Projects",
       selectedIndex: 0,
       active: false,
-      icon: "icons/settings.png",
+      icon: "icons/projects.png",
       items: [
-      { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/system-update.png", href:"" },
-      { title: "EleNa", subtitle: "", active: false, icon: "icons/game-settings.png", href:"" },
-      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/video-settings.png", href: "" },
-      { title: "Network Settings", subtitle: "Adjusts settings for the Internet connection.", active: false, icon: "icons/network-settings.png", href: "" },]
-			 	},
+      { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/www.png", href:"" },
+      { title: "EleNa", subtitle: "", active: false, icon: "icons/www.png", href:"" },
+      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/www.png", href: "" },]},
 
     "Experience": {
       index: 2,
       title: "Experience",
       selectedIndex: 0,
       active: false,
-      icon: "icons/photo.png",
+      icon: "icons/settings.png",
       items: [      
-        { title: "Customer Service Associate", subtitle: "Residential Life Services at UMass Amherst", active: false, icon: "icons/server-search.png", href:"" },
-        { title: "Software Development Team Intern", subtitle: "ISO New England (ISO-NE)", active: false, icon: "icons/photo-gallery.png", href: ""},
-        { title: "Front-End Developer Intern", subtitle: "Aspec Sciré", active: false, icon: "icons/playlist.png", href: "" },] },
+        { title: "Customer Service Associate", subtitle: "Residential Life Services at UMass Amherst", active: false, icon: "icons/www.png", href:"" },
+        { title: "Software Development Team Intern", subtitle: "ISO New England (ISO-NE)", active: false, icon: "icons/www.png", href: ""},
+        { title: "Front-End Developer Intern", subtitle: "Aspec Sciré", active: false, icon: "icons/www.png", href: "" },] },
 
-      
     "Coursework": {
       index: 3,
       title: "Coursework",
       selectedIndex: 0,
       active: false,
-      icon: "icons/photo.png",
+      icon: "icons/coursework.png",
       items: [ //could always add more coursework
-        { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
-        { title: "Web Programming", subtitle: "", active: false, icon: "icons/photo-gallery.png", href: ""},
+        { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/algorithm.png", href:"" },
+        { title: "Web Programming", subtitle: "", active: false, icon: "icons/network.png", href: ""},
         { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
         { title: "Data Structures", subtitle: "", active: false, icon: "icons/photo-gallery.png", href: ""},
         { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/playlist.png", href: "" },] },
@@ -72,7 +69,7 @@ var model = {
       title: "Social",
       selectedIndex: 0,
       active: false,
-      icon: "icons/video.png",
+      icon: "icons/friends.png",
       items: [
       { title: "Contact me!", subtitle: "aaryaman.s.m@gmail.com", active: false, icon: "icons/folder.png", href: "https://mail.google.com/mail/?view=cm&tf=0&to=aaryaman.s.m@gmail.com" },
       { title: "LinkedIn", subtitle: "", active: false, icon: "icons/server-search.png", href:"https://www.linkedin.com/in/aaryamanmehta/" },
@@ -83,7 +80,7 @@ var model = {
       title: "Skills",
       selectedIndex: 0,
       active: false,
-      icon: "icons/play.png",
+      icon: "icons/trophy.png",
       items: [
         { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
         { title: "JavaScript", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
@@ -91,7 +88,7 @@ var model = {
         { title: "PostgreSQL", subtitle: "", active: false, icon: "icons/folder-remote.png", href: "" },
         { title: "Node.JS", subtitle: "", active: false, icon: "icons/folder-game.png", href: "" },
         { title: "Java", subtitle: "", active: false, icon: "icons/store-logo.png", href: "" },
-        { title: "Python", subtitle: "", active: false, icon: "album", href: "https://play.geforcenow.com/" }
+        { title: "Python", subtitle: "", active: false, icon: "icons/www.png", href: "" }
       ] },
 	} };
 
