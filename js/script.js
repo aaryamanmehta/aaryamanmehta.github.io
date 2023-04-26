@@ -26,11 +26,11 @@ var model = {
       active: false,
       icon: "icons/projects.png",
       items: [
-      { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/singleproject.png", href:"" },
+      { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
       { title: "EleNa", subtitle: "", active: false, icon: "icons/elena.png", href:"" },
       { title: "DynaBoard", subtitle: "", active: false, icon: "icons/dashboard.png", href: "" },
-      { title: "Seam Carving", subtitle: "", active: false, icon: "icons/www.png", href: "" },
-      { title: "Ray Tracing", subtitle: "", active: false, icon: "icons/www.png", href: "" },
+      { title: "Seam Carving", subtitle: "", active: false, icon: "icons/seam.png", href: "" },
+      { title: "Ray Tracing", subtitle: "", active: false, icon: "icons/raytracing.png", href: "" },
       ]},
 
     "Experience": {
@@ -49,15 +49,15 @@ var model = {
       title: "Coursework",
       selectedIndex: 0,
       active: false,
-      icon: "icons/folder.png",
+      icon: "icons/coursework.png",
       items: [ //could always add more coursework
-        { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/folder.png", href:"" },
-        { title: "Data Structures", subtitle: "", active: false, icon: "icons/folder.png", href: ""},
-        { title: "Web Programming", subtitle: "", active: false, icon: "icons/folder.png", href: ""},
-        { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/folder.png", href:"" },
-        { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
-        { title: "Introduction to Computer Graphics", subtitle: "", active: false, icon: "icons/folder.png", href:"" },
-        { title: "Artificial Intelligence", subtitle: "", active: false, icon: "icons/folder.png", href:"" },] },
+        { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/algorithms.png", href:"" },
+        { title: "Data Structures", subtitle: "", active: false, icon: "icons/datastructures.png", href: ""},
+        { title: "Web Programming", subtitle: "", active: false, icon: "icons/web.png", href: ""},
+        { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/datamanagement.png", href:"" },
+        { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/engineering.png", href: "" },
+        { title: "Introduction to Computer Graphics", subtitle: "", active: false, icon: "icons/graphics.png", href:"" },
+        { title: "Artificial Intelligence", subtitle: "", active: false, icon: "icons/ai.png", href:"" },] },
 
     "Education": {
       index: 4,
@@ -78,7 +78,8 @@ var model = {
       items: [
       { title: "Contact me!", subtitle: "aaryaman.s.m@gmail.com", active: false, icon: "icons/email.png", href: "https://mail.google.com/mail/?view=cm&tf=0&to=aaryaman.s.m@gmail.com" },
       { title: "LinkedIn", subtitle: "", active: false, icon: "icons/linkedin.png", href:"https://www.linkedin.com/in/aaryamanmehta/" },
-      { title: "GitHub", subtitle: "", active: false, icon: "icons/github.png", href: "https://github.com/aaryamanmehta" },] },
+      { title: "GitHub", subtitle: "", active: false, icon: "icons/github.png", href: "https://github.com/aaryamanmehta" },
+      { title: "Resume", subtitle: "", active: false, icon: "icons/send.png", href: "" },] },
 		
     "Skills": {
       index: 6,
