@@ -274,109 +274,109 @@ function linkforward() {
   else if (currentSubmenu.title === "Aaryaman Mehta") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Hi! I'm Aaryaman Mehta.<br><br>I'm a senior Computer Science student at UMass Amherst. I like to spend my free time at the gym, playing tennis, or gaming. I'm currently enjoying a playthrough of Elden Ring, though I've recently been playing a lot more Mario Kart and Mario Party with my friends. Since college, I've gained experience working with development teams on a number of software projects, collaborating with others to build systems that meet a variety of needs. I've particularly taken a liking to web development and front-end development! <br><br> As I near graduation, I am currently exploring opportunities in software engineering and am eager to contribute my skills to new projects and challenges. I'm always looking to learn and grow as a developer and would welcome the chance to discuss any opportunities that may be available.</p>";
+      popup.innerHTML = "<p class = 'title'>Aaryaman Mehta <img src='./icons/aaryaman.png' alt='aaryaman icon'></p> <p>Hi! I'm Aaryaman Mehta.<br><br>I'm a senior Computer Science student at UMass Amherst. I like to spend my free time at the gym, playing tennis, or gaming. I'm currently enjoying a playthrough of Elden Ring, though I've recently been playing a lot more Mario Kart and Mario Party with my friends. Since college, I've gained experience working with development teams on a number of software projects, collaborating with others to build systems that meet a variety of needs. I've particularly taken a liking to web development and front-end development! <br><br> As I near graduation, I am currently exploring opportunities in software engineering and am eager to contribute my skills to new projects and challenges. I'm always looking to learn and grow as a developer and would welcome the chance to discuss any opportunities that may be available.</p>";
       $('body').off('keyup');    
     }
     else if (currentSubmenu.title === "MeetMeHalfway") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "meetmehalfaay blah blah blah";
+      popup.innerHTML = "<p class = 'title'>MeetMeHalfway <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p> meetmehalfaay blah blah blah";
       $('body').off('keyup');    
     }
     else if (currentSubmenu.title === "EleNa") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "EleNa blah blah blah";
+      popup.innerHTML = "<p class = 'title'>EleNa <img src='./icons/elena.png' alt='elena icon'></p> EleNa blah blah blah";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "DynaBoard") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "DynaBoard blah blah blah";
+      popup.innerHTML = "<p class = 'title'>DynaBoard <img src='./icons/dashboard.png' alt='dash icon'></p> DynaBoard blah blah blah";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Seam Carving") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class='seam'>Seam Carving<br><br>This project implements the Seam Carving algorithm, which is a technique for resizing images in a content-aware manner. The idea is to remove or add pixels in areas of the image that are less important to preserve, such as regions with uniform color, in order to maintain the overall structure and content of the image. This is done by computing the energy of each pixel in the image, which represents how important that pixel is to the image. Then, a seam is found in the image that has the lowest cumulative energy, and the pixels in that seam are removed. This process is repeated until the desired image size is reached.<br><br> My implementation of the algorithm includes two main functions. The <i>compute_energy</i> function takes an image as input and returns an array of energies for each pixel in the image. The energy is calculated based on the color differences between adjacent pixels using a formula that gives higher values to pixels that are on the edges of the image or have a high contrast with their neighbors.<br><br> The <i>find_vertical_seam</i> function takes an image and its corresponding energy array as input and returns the indices of the pixels in the vertical seam with the lowest cumulative energy. This is done using a path-finding algorithm that finds the minimum-cost path from the top to the bottom of the image. The seam is then removed by shifting the pixels to the left, and the process is repeated until the desired image width is reached. The same process can be applied to the image's height by transposing the image and finding horizontal seams.</p><img src='icons/InputImage.png' alt='Input Image' class='seam-image1'><img src='icons/vertical_carving.gif' alt='Vertical Seam Carving' class='seam-image2'><img src='icons/horizontal_carving.gif' alt='Horizontal Seam Carving' class='seam-image3'>";
+      popup.innerHTML = "<p class = 'title'>Seam Carving <img src='./icons/seam.png' alt='seam icon'></p> <p class='seam'>Seam Carving<br><br>This project implements the Seam Carving algorithm, which is a technique for resizing images in a content-aware manner. The idea is to remove or add pixels in areas of the image that are less important to preserve, such as regions with uniform color, in order to maintain the overall structure and content of the image. This is done by computing the energy of each pixel in the image, which represents how important that pixel is to the image. Then, a seam is found in the image that has the lowest cumulative energy, and the pixels in that seam are removed. This process is repeated until the desired image size is reached.<br><br> My implementation of the algorithm includes two main functions. The <i>compute_energy</i> function takes an image as input and returns an array of energies for each pixel in the image. The energy is calculated based on the color differences between adjacent pixels using a formula that gives higher values to pixels that are on the edges of the image or have a high contrast with their neighbors.<br><br> The <i>find_vertical_seam</i> function takes an image and its corresponding energy array as input and returns the indices of the pixels in the vertical seam with the lowest cumulative energy. This is done using a path-finding algorithm that finds the minimum-cost path from the top to the bottom of the image. The seam is then removed by shifting the pixels to the left, and the process is repeated until the desired image width is reached. The same process can be applied to the image's height by transposing the image and finding horizontal seams.</p><img src='icons/InputImage.png' alt='Input Image' class='seam-image1'><img src='icons/vertical_carving.gif' alt='Vertical Seam Carving' class='seam-image2'><img src='icons/horizontal_carving.gif' alt='Horizontal Seam Carving' class='seam-image3'>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Ray Tracing") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Ray Tracing blah blah blah</p>";
+      popup.innerHTML = "<p class = 'title'>Ray Tracing <img src='./icons/raytracing.png' alt='raytracing icon'></p> <p>Ray Tracing blah blah blah</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Customer Service Associate") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Customer Service Associate at Residential Life Services at UMass Amherst<br><br>Amherst, MA<br><br>Feb. 2023 - Present<br><br>As a CSA, I was responsible for assisting with the management of daily operations, including check-ins/check-outs, lock outs, lost keys, maintenance requests, and delivering mail and packages.</p>";
+      popup.innerHTML = "<p class = 'title'>Customer Service Associate <img src='./icons/csa.png' alt='csa icon'> </p><p>Customer Service Associate at Residential Life Services at UMass Amherst<br><br>Amherst, MA<br><br>Feb. 2023 - Present<br><br>As a CSA, I was responsible for assisting with the management of daily operations, including check-ins/check-outs, lock outs, lost keys, maintenance requests, and delivering mail and packages.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Software Development Team Intern") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Software Development Team Intern at ISO New England (ISO-NE)<br><br>Amherst, MA<br><br>Sep. 2022 - Dec. 2022<br><br>At ISO-NE, I collaborated with a team of software developers in Scrum to create a dynamic data comparison GUI that visualizes LMP data.<br><br>The GUI is a dashboard, titled DynaBoard, that performs sanity checks to ensure consistency between a provided data model and a simulation data model, and provides statistical analysis of models. We used Supabase (PostgreSQL DB), Next.JS, and Plotly.JS as a charting library in development.</p>";
+      popup.innerHTML = "<p class = 'title'>Software Development Team Intern <img src='./icons/engineer.png' alt='engineer icon'></p> <p>Software Development Team Intern at ISO New England (ISO-NE)<br><br>Amherst, MA<br><br>Sep. 2022 - Dec. 2022<br><br>At ISO-NE, I collaborated with a team of software developers in Scrum to create a dynamic data comparison GUI that visualizes LMP data.<br><br>The GUI is a dashboard, titled DynaBoard, that performs sanity checks to ensure consistency between a provided data model and a simulation data model, and provides statistical analysis of models. We used Supabase (PostgreSQL DB), Next.JS, and Plotly.JS as a charting library in development.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Front-End Developer Intern") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Front-End Developer Intern at Aspec Sciré<br><br>Bangalore, IND<br><br>May. 2022 - Aug. 2022<br><br>As it was my first internship as a novice programmer, I undertook formal training in React by mentors at Aspec Sciré in order to migrate from Mapbox to Openlayers in Vimana, a platform for processing, visualizing, storing and organizing data collected from drones.</p>";
+      popup.innerHTML = "<p class = 'title'>Front-End Developer Intern <img src='./icons/frontend.png' alt='frontend icon'></p> <p>Front-End Developer Intern at Aspec Sciré<br><br>Bangalore, IND<br><br>May. 2022 - Aug. 2022<br><br>As it was my first internship as a novice programmer, I undertook formal training in React by mentors at Aspec Sciré in order to migrate from Mapbox to Openlayers in Vimana, a platform for processing, visualizing, storing and organizing data collected from drones.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Introduction to Algorithms") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Introduction to Algorithms<br><br>Introduces sorting, searching, string-processing, and graph algorithms, as well as dynamic programming and NP-completeness.</p>";
+      popup.innerHTML = "<p class = 'title'>Introduction to Algorithms <img src='./icons/algorithms.png' alt='algorithms icon'></p><p>Introduction to Algorithms<br><br>Introduces sorting, searching, string-processing, and graph algorithms, as well as dynamic programming and NP-completeness.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Web Programming") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Web Programming<br><br><i>Currently taking</i><br><br>Develops web programming experience, including HTML, CSS, JavaScript, AJAX, JavaScript libraries and web security.</p>";
+      popup.innerHTML = "<p class = 'title'>Web Programming <img src='./icons/web.png' alt='web icon'></p><p>Web Programming<br><br><i>Currently taking</i><br><br>Develops web programming experience, including HTML, CSS, JavaScript, AJAX, JavaScript libraries and web security.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Practice and Applications of Data Management") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Practice and Applications of Data Management<br><br><i>Currently taking</i><br><br>Develops data management experience, including SQL, relational schema design, basic transaction implementation, and data visualization tools.</p>";
+      popup.innerHTML = "<p class = 'title'>Practice and Applications of Data Management <img src='./icons/datamanagement.png' alt='datamanagement icon'></p><p>Practice and Applications of Data Management<br><br><i>Currently taking</i><br><br>Develops data management experience, including SQL, relational schema design, basic transaction implementation, and data visualization tools.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Introduction to Computer Graphics") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Introduction to Computer Graphics<br><br>Introduces fundamental concepts of 2D and 3D computer graphics, such as image processing, 2D/3D modelling, 3D graphics pipeline, WebGL, shading, texture mapping and ray tracing.</p>";
+      popup.innerHTML = "<p class = 'title'>Introduction to Computer Graphics <img src='./icons/graphics.png' alt='graphics icon'></p><p>Introduction to Computer Graphics<br><br>Introduces fundamental concepts of 2D and 3D computer graphics, such as image processing, 2D/3D modelling, 3D graphics pipeline, WebGL, shading, texture mapping and ray tracing.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Artificial Intelligence") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Artificial Intelligence<br><br>Introduces AI concepts, such as search strategies, knowledge representation, machine learning, and formal logic.</p>";
+      popup.innerHTML = "<p class = 'title'>Artificial Intelligence <img src='./icons/ai.png' alt='ai icon'></p><p>Artificial Intelligence<br><br>Introduces AI concepts, such as search strategies, knowledge representation, machine learning, and formal logic.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Data Structures") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Data Structures<br><br>Introduces and develops methods for designing and implementing abstract data types, such as linked structures, recursive structures, stacks, queues, binary trees, balanced trees, graphs, and hash tables.</p>";
+      popup.innerHTML = "<p class = 'title'>Data Structures <img src='./icons/datastructures.png' alt='datastructures icon'></p><p>Data Structures<br><br>Introduces and develops methods for designing and implementing abstract data types, such as linked structures, recursive structures, stacks, queues, binary trees, balanced trees, graphs, and hash tables.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Theory and Practice of Software Engineering") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Theory and Practice of Software Engineering<br><br><i>Currently taking</i><br><br>Develops software engineering experience, including requirements engineering, software testing, program analysis and automated software engineering.</p>";
+      popup.innerHTML = "<p class = 'title'>Theory and Practice of Software Engineering <img src='./icons/engineering.png' alt='engineering icon'></p><p>Theory and Practice of Software Engineering<br><br><i>Currently taking</i><br><br>Develops software engineering experience, including requirements engineering, software testing, program analysis and automated software engineering.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "University of Massachusetts Amherst") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Expected Dec. 2023<br><br>Cumulative GPA of 3.62<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
+      popup.innerHTML = "<p class = 'title'>University of Massachusetts Amherst <img src='./icons/umass.png' alt='umass icon'></p><p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Expected Dec. 2023<br><br>Cumulative GPA of 3.62<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Canadian International School (Bangalore)") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p>Canadian International School (Bangalore)<br><br>Bangalore, IND<br><br>Aug. 2018 - May 2020<br><br>I received the International Baccalaureate Diploma with a score of 35.</p>";
+      popup.innerHTML = "<p class = 'title'>Canadian International School (Bangalore) <img src='./icons/cis.png' alt='cis icon'></p><p>Canadian International School (Bangalore)<br><br>Bangalore, IND<br><br>Aug. 2018 - May 2020<br><br>I received the International Baccalaureate Diploma with a score of 35.</p>";
       $('body').off('keyup');
     }
   }

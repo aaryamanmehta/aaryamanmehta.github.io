@@ -215,7 +215,7 @@ a {
   line-height: 1.5;
   padding-left: 20%;
   padding-right: 20%;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .popup::before,
@@ -253,8 +253,30 @@ a {
   line-height: 1.5;
   padding-left: 5%;
   padding-right: 50%;
-  opacity: 0.9;
+  opacity: 0.8;
   font-size: 12px;
+}
+
+.popup p.title {
+  position: absolute;
+  padding-left: 0%;
+  padding-right: 0%;
+  top: 15%;
+  left: 7%;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.popup p.title img {
+  position: absolute;
+  margin: auto;
+  width: auto;  
+  height: 150%;
+  display: block;
+  bottom: 0;
+  top: 0;
+  right: 100%;
+  opacity: 0.8;
 }
 
 .popup img.seam-image1 {
@@ -267,7 +289,7 @@ a {
   width: auto;  
   height: 20%;
   display: block;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .popup img.seam-image2 {
@@ -280,7 +302,7 @@ a {
   width: auto;  
   height: 20%;
   display: block;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .popup img.seam-image3 {
@@ -293,7 +315,7 @@ a {
   width: auto;  
   height: 20%;
   display: block;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 #landingPage {
