@@ -248,15 +248,6 @@ a {
   opacity: 1;
 }
 
-.popup p.seam {
-  text-align: center;
-  line-height: 1.5;
-  padding-left: 5%;
-  padding-right: 50%;
-  opacity: 0.8;
-  font-size: 12px;
-}
-
 .popup p.title {
   position: absolute;
   padding-left: 0%;
@@ -277,6 +268,15 @@ a {
   top: 0;
   right: 100%;
   opacity: 0.8;
+}
+
+.popup p.seam {
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 5%;
+  padding-right: 50%;
+  opacity: 0.8;
+  font-size: 12px;
 }
 
 .popup img.seam-image1 {
@@ -310,6 +310,67 @@ a {
   position: absolute;
   top: 52%;
   left: 70%;
+  right: 0;
+  margin: auto;
+  width: auto;  
+  height: 20%;
+  display: block;
+  opacity: 0.8;
+}
+
+.popup p.raytracing {
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 5%;
+  padding-right: 50%;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.popup img.raytracing-image1 {
+  /* // order all seam images to be vertically on top of each other */
+  position: absolute;
+  top: 28%;
+  left: 33%;
+  right: 0;
+  margin: auto;
+  width: auto;  
+  height: 20%;
+  display: block;
+  opacity: 0.8;
+}
+
+.popup img.raytracing-image2 {
+  /* // order all seam images to be vertically on top of each other */
+  position: absolute;
+  top: 28%;
+  left: 67%;
+  right: 0;
+  margin: auto;
+  width: auto;  
+  height: 20%;
+  display: block;
+  opacity: 0.8;
+}
+
+.popup img.raytracing-image3 {
+  /* // order all seam images to be vertically on top of each other */
+  position: absolute;
+  top: 52%;
+  left: 33%;
+  right: 0;
+  margin: auto;
+  width: auto;  
+  height: 20%;
+  display: block;
+  opacity: 0.8;
+}
+
+.popup img.raytracing-image4 {
+  /* // order all seam images to be vertically on top of each other */
+  position: absolute;
+  top: 52%;
+  left: 67%;
   right: 0;
   margin: auto;
   width: auto;  
