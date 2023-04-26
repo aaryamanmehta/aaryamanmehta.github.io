@@ -90,7 +90,7 @@ var model = {
       items: [
         { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/htmlcss.png", href: "" },
         { title: "JavaScript", subtitle: "", active: false, icon: "icons/js.png", href: "" },
-        { title: "React", subtitle: "", active: false, icon: "icons/react.png", href: "" },
+        { title: "React.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
         { title: "PostgreSQL", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
         { title: "Node.JS", subtitle: "", active: false, icon: "icons/node.png", href: "" },
         { title: "Java", subtitle: "", active: false, icon: "icons/java.png", href: "" },
@@ -295,6 +295,18 @@ function linkforward() {
       popup.innerHTML = "DynaBoard blah blah blah";
       $('body').off('keyup');
     }
+    else if (currentSubmenu.title === "Seam Carving") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p class='seam'>Seam Carving<br><br>This project implements the Seam Carving algorithm, which is a technique for resizing images in a content-aware manner. The idea is to remove or add pixels in areas of the image that are less important to preserve, such as regions with uniform color, in order to maintain the overall structure and content of the image. This is done by computing the energy of each pixel in the image, which represents how important that pixel is to the image. Then, a seam is found in the image that has the lowest cumulative energy, and the pixels in that seam are removed. This process is repeated until the desired image size is reached.<br><br> My implementation of the algorithm includes two main functions. The <i>compute_energy</i> function takes an image as input and returns an array of energies for each pixel in the image. The energy is calculated based on the color differences between adjacent pixels using a formula that gives higher values to pixels that are on the edges of the image or have a high contrast with their neighbors.<br><br> The <i>find_vertical_seam</i> function takes an image and its corresponding energy array as input and returns the indices of the pixels in the vertical seam with the lowest cumulative energy. This is done using a path-finding algorithm that finds the minimum-cost path from the top to the bottom of the image. The seam is then removed by shifting the pixels to the left, and the process is repeated until the desired image width is reached. The same process can be applied to the image's height by transposing the image and finding horizontal seams.</p><img src='icons/InputImage.png' alt='Input Image' class='seam-image1'><img src='icons/vertical_carving.gif' alt='Vertical Seam Carving' class='seam-image2'><img src='icons/horizontal_carving.gif' alt='Horizontal Seam Carving' class='seam-image3'>";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Ray Tracing") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p>Ray Tracing blah blah blah</p>";
+      $('body').off('keyup');
+    }
     else if (currentSubmenu.title === "Customer Service Associate") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
@@ -361,7 +373,6 @@ function linkforward() {
       popup.innerHTML = "<p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Expected Dec. 2023<br><br>Cumulative GPA of 3.62<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
       $('body').off('keyup');
     }
-    // could add more coursework ??? 
     else if (currentSubmenu.title === "Canadian International School (Bangalore)") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
