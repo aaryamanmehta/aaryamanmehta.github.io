@@ -27,8 +27,8 @@ var model = {
       icon: "icons/projects.png",
       items: [
       { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
-      { title: "EleNa", subtitle: "", active: false, icon: "icons/elena.png", href:"" },
-      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/dashboard.png", href: "" },
+      { title: "ELeNA", subtitle: "", active: false, icon: "icons/elena.png", href:"" },
+      // { title: "DynaBoard", subtitle: "", active: false, icon: "icons/dashboard.png", href: "" },
       { title: "Seam Carving", subtitle: "", active: false, icon: "icons/seam.png", href: "" },
       { title: "Ray Tracing", subtitle: "", active: false, icon: "icons/raytracing.png", href: "" },
       ]},
@@ -79,7 +79,7 @@ var model = {
       { title: "Contact me!", subtitle: "aaryaman.s.m@gmail.com", active: false, icon: "icons/email.png", href: "https://mail.google.com/mail/?view=cm&tf=0&to=aaryaman.s.m@gmail.com" },
       { title: "LinkedIn", subtitle: "", active: false, icon: "icons/linkedin.png", href:"https://www.linkedin.com/in/aaryamanmehta/" },
       { title: "GitHub", subtitle: "", active: false, icon: "icons/github.png", href: "https://github.com/aaryamanmehta" },
-      { title: "Resume", subtitle: "", active: false, icon: "icons/send.png", href: "" },] },
+      { title: "Resume", subtitle: "", active: false, icon: "icons/send.png", href: "icons/resume.pdf" },] },
 		
     "Skills": {
       index: 6,
@@ -280,21 +280,21 @@ function linkforward() {
     else if (currentSubmenu.title === "MeetMeHalfway") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>MeetMeHalfway <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p> meetmehalfaay blah blah blah";
+      popup.innerHTML = "<p class = 'title'>MeetMeHalfway <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p><p>MeetMeHalfway<br><br><i>Currently in development</i><br><br>MeetMeHalfway is a web app that suggests convenient points for friend groups to meet one another based on their real-time locations and preferences. It allows a user to invite specific groups of friends to ‘meet up’, following which the app finds an ideal meeting location depending on the initial location of each user, and depending on the preferences selected by each user. The app then tracks the user’s GPS location in real-time, and displays it on a map so that the other friends can see where everyone in the group is.</p>";
       $('body').off('keyup');    
     }
-    else if (currentSubmenu.title === "EleNa") {
+    else if (currentSubmenu.title === "ELeNA") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>EleNa <img src='./icons/elena.png' alt='elena icon'></p> EleNa blah blah blah";
+      popup.innerHTML = "<p class = 'title'>EleNa <img src='./icons/elena.png' alt='elena icon'></p><p>ELeNA<br><br><i>Currently in development</i><br><br>EleNa is a map-based web application that enables users to decide routes between geographical locations with the inclusion of elevation as a factor. The user has several options to choose from when calculating the route from the origin and the destination. They may select the shortest path with no elevation. The user may also input a percentage value of the shortest path, essentially an “offset” value, that they are willing to travel extra, and can select whether to maximize or minimize elevation. The route will be displayed depending on the user’s preferences.<br><br>The UI displays information about the chosen route, such as the elevation gain, elevation drop, distance, and approximate time taken to travel, and using OpenStreetMap’s API, the user is able to interact with the map.</p>";
       $('body').off('keyup');
     }
-    else if (currentSubmenu.title === "DynaBoard") {
-      popup.classList.add("visible");
-      xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>DynaBoard <img src='./icons/dashboard.png' alt='dash icon'></p> DynaBoard blah blah blah";
-      $('body').off('keyup');
-    }
+    // else if (currentSubmenu.title === "DynaBoard") {
+    //   popup.classList.add("visible");
+    //   xmb.classList.add("invisible");
+    //   popup.innerHTML = "<p class = 'title'>DynaBoard <img src='./icons/dashboard.png' alt='dash icon'></p> DynaBoard blah blah blah";
+    //   $('body').off('keyup');
+    // }
     else if (currentSubmenu.title === "Seam Carving") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
