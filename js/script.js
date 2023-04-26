@@ -16,8 +16,8 @@ var model = {
       active: false,
       icon: "icons/users.png",
       items: [
-			{ title: "Welcome!", subtitle: "Navigate using the arrow/WASD, enter, and backspace keys!", active: false, icon: "icons/power.png", href: "" },
-      { title: "Aaryaman Mehta", subtitle: "About Me", active: true, icon: "icons/000.png", href: "" }] },
+			{ title: "Welcome!", subtitle: "Navigate using the arrow/WASD, enter, and backspace keys!", active: false, icon: "icons/welcome.png", href: "" },
+      { title: "Aaryaman Mehta", subtitle: "About Me", active: true, icon: "icons/aaryaman.png", href: "" }] },
 
     "Projects": {
       index: 1,
@@ -26,9 +26,9 @@ var model = {
       active: false,
       icon: "icons/projects.png",
       items: [
-      { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/www.png", href:"" },
-      { title: "EleNa", subtitle: "", active: false, icon: "icons/www.png", href:"" },
-      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/www.png", href: "" },
+      { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/singleproject.png", href:"" },
+      { title: "EleNa", subtitle: "", active: false, icon: "icons/elena.png", href:"" },
+      { title: "DynaBoard", subtitle: "", active: false, icon: "icons/dashboard.png", href: "" },
       { title: "Seam Carving", subtitle: "", active: false, icon: "icons/www.png", href: "" },
       { title: "Ray Tracing", subtitle: "", active: false, icon: "icons/www.png", href: "" },
       ]},
@@ -38,62 +38,62 @@ var model = {
       title: "Experience",
       selectedIndex: 0,
       active: false,
-      icon: "icons/settings.png",
+      icon: "icons/experience.png",
       items: [      
-        { title: "Customer Service Associate", subtitle: "Residential Life Services at UMass Amherst", active: false, icon: "icons/www.png", href:"" },
-        { title: "Software Development Team Intern", subtitle: "ISO New England (ISO-NE)", active: false, icon: "icons/www.png", href: ""},
-        { title: "Front-End Developer Intern", subtitle: "Aspec Sciré", active: false, icon: "icons/www.png", href: "" },] },
+        { title: "Customer Service Associate", subtitle: "Residential Life Services at UMass Amherst", active: false, icon: "icons/csa.png", href:"" },
+        { title: "Software Development Team Intern", subtitle: "ISO New England (ISO-NE)", active: false, icon: "icons/engineer.png", href: ""},
+        { title: "Front-End Developer Intern", subtitle: "Aspec Sciré", active: false, icon: "icons/frontend.png", href: "" },] },
 
     "Coursework": {
       index: 3,
       title: "Coursework",
       selectedIndex: 0,
       active: false,
-      icon: "icons/coursework.png",
+      icon: "icons/folder.png",
       items: [ //could always add more coursework
-        { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/algorithm.png", href:"" },
-        { title: "Data Structures", subtitle: "", active: false, icon: "icons/photo-gallery.png", href: ""},
-        { title: "Web Programming", subtitle: "", active: false, icon: "icons/network.png", href: ""},
-        { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
-        { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/playlist.png", href: "" },
-        { title: "Introduction to Computer Graphics", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },
-        { title: "Artificial Intelligence", subtitle: "", active: false, icon: "icons/server-search.png", href:"" },] },
+        { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/folder.png", href:"" },
+        { title: "Data Structures", subtitle: "", active: false, icon: "icons/folder.png", href: ""},
+        { title: "Web Programming", subtitle: "", active: false, icon: "icons/folder.png", href: ""},
+        { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/folder.png", href:"" },
+        { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
+        { title: "Introduction to Computer Graphics", subtitle: "", active: false, icon: "icons/folder.png", href:"" },
+        { title: "Artificial Intelligence", subtitle: "", active: false, icon: "icons/folder.png", href:"" },] },
 
     "Education": {
       index: 4,
       title: "Education",
       selectedIndex: 0,
       active: false,
-      icon: "icons/music.png",
+      icon: "icons/education.png",
       items: [
-      { title: "University of Massachusetts Amherst", subtitle: "B.S in Computer Science", active: false, icon: "icons/server-search.png" },
-      { title: "Canadian International School (Bangalore)", subtitle: "International Baccalaureate Diploma", active: false, icon: "icons/playlist.png", href: "" },] },
+      { title: "University of Massachusetts Amherst", subtitle: "B.S in Computer Science", active: false, icon: "icons/umass.png" },
+      { title: "Canadian International School (Bangalore)", subtitle: "International Baccalaureate Diploma", active: false, icon: "icons/cis.png", href: "" },] },
 
     "Social": {
       index: 5,
       title: "Social",
       selectedIndex: 0,
       active: false,
-      icon: "icons/friends.png",
+      icon: "icons/social.png",
       items: [
-      { title: "Contact me!", subtitle: "aaryaman.s.m@gmail.com", active: false, icon: "icons/folder.png", href: "https://mail.google.com/mail/?view=cm&tf=0&to=aaryaman.s.m@gmail.com" },
-      { title: "LinkedIn", subtitle: "", active: false, icon: "icons/server-search.png", href:"https://www.linkedin.com/in/aaryamanmehta/" },
-      { title: "GitHub", subtitle: "", active: false, icon: "icons/upload.png", href: "https://github.com/aaryamanmehta" },] },
+      { title: "Contact me!", subtitle: "aaryaman.s.m@gmail.com", active: false, icon: "icons/email.png", href: "https://mail.google.com/mail/?view=cm&tf=0&to=aaryaman.s.m@gmail.com" },
+      { title: "LinkedIn", subtitle: "", active: false, icon: "icons/linkedin.png", href:"https://www.linkedin.com/in/aaryamanmehta/" },
+      { title: "GitHub", subtitle: "", active: false, icon: "icons/github.png", href: "https://github.com/aaryamanmehta" },] },
 		
     "Skills": {
       index: 6,
       title: "Skills",
       selectedIndex: 0,
       active: false,
-      icon: "icons/trophy.png",
+      icon: "icons/skills.png",
       items: [
-        { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
-        { title: "JavaScript", subtitle: "", active: false, icon: "icons/folder.png", href: "" },
-        { title: "React", subtitle: "", active: false, icon: "icons/memory-card.png", href: "" },
-        { title: "PostgreSQL", subtitle: "", active: false, icon: "icons/folder-remote.png", href: "" },
-        { title: "Node.JS", subtitle: "", active: false, icon: "icons/folder-game.png", href: "" },
-        { title: "Java", subtitle: "", active: false, icon: "icons/store-logo.png", href: "" },
-        { title: "Python", subtitle: "", active: false, icon: "icons/www.png", href: "" }
+        { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/htmlcss.png", href: "" },
+        { title: "JavaScript", subtitle: "", active: false, icon: "icons/js.png", href: "" },
+        { title: "React", subtitle: "", active: false, icon: "icons/react.png", href: "" },
+        { title: "PostgreSQL", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
+        { title: "Node.JS", subtitle: "", active: false, icon: "icons/node.png", href: "" },
+        { title: "Java", subtitle: "", active: false, icon: "icons/java.png", href: "" },
+        { title: "Python", subtitle: "", active: false, icon: "icons/python.png", href: "" }
       ] },
 	} };
 
