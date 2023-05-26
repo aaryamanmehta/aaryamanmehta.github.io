@@ -380,6 +380,27 @@ a {
   opacity: 0.8;
 }
 
+.popup video.mmvideo {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  right: 0;
+  margin: auto;
+  width: auto;  
+  height: 50%;
+  display: block;
+  opacity: 0.8;
+}
+
+.popup p.mmh {
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 5%;
+  padding-right: 50%;
+  opacity: 0.8;
+  font-size: 15px;
+}
+
 #landingPage {
   background-image: -webkit-linear-gradient(253deg, rgb(46, 29, 158) 0%, rgb(21, 18, 84) 72%);
   height: 100vh;
