@@ -27,7 +27,7 @@ var model = {
       icon: "icons/projects.png",
       items: [
       { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
-      { title: "ELeNA", subtitle: "", active: false, icon: "icons/elena.png", href:"" },
+      { title: "ELeNA", subtitle: "", active: false, icon: "icons/elena2.png", href:"" },
       // { title: "DynaBoard", subtitle: "", active: false, icon: "icons/dashboard.png", href: "" },
       { title: "Seam Carving", subtitle: "", active: false, icon: "icons/seam.png", href: "" },
       { title: "Ray Tracing", subtitle: "", active: false, icon: "icons/raytracing.png", href: "" },
@@ -280,13 +280,13 @@ function linkforward() {
     else if (currentSubmenu.title === "MeetMeHalfway") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>MeetMeHalfway <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p><p class='mmh'>MeetMeHalfway<br><br><i>Currently in development</i><br><br>MeetMeHalfway is a web app that suggests convenient points for friend groups to meet one another based on their real-time locations and preferences. It allows a user to invite specific groups of friends to ‘meet up’, following which the app finds an ideal meeting location depending on the initial location of each user, and depending on the preferences selected by each user. The app then tracks the user’s GPS location in real-time, and displays it on a map so that the other friends can see where everyone in the group is.</p><video class='mmvideo' controls><source src='/icons/meetmehalfway.mp4' type='video/mp4'></video>";
+      popup.innerHTML = "<p class = 'title'>MeetMeHalfway <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p><p class='mmh'>MeetMeHalfway<br><br>MeetMeHalfway is a web application that suggests convenient points for friend groups to meet one another based on their current locations. It allows a user to invite specific groups of friends to ‘meet up’, following which the app finds an ideal meeting location depending on the initial location of each user.<br><br>The application has a landing page, which is the user authentication. The user can either login into an existing account, or create a new one. MeetMeHalfway works by requesting and storing the user’s location into the database every time the user logs in. Once the user is signed in, they may select an existing friend group that consists of other users of the application. They may then choose to “invite”, which sends an email to the users of the friend group to sign in so as to update their current location, or “meet up”, which calculates a meeting point that exists in the middle between the locations of each user in the friend group.<br><br>Of course, there is a user profile page, and a friend groups page to create, modify, and delete friend groups.<br><br>The video to the right is a demonstration of the application for the class submission. It highlights MeetMeHalfway’s functionality and design.</p><video class='mmvideo' controls><source src='/icons/meetmehalfway.mp4' type='video/mp4'></video>";
       $('body').off('keyup');    
     }
     else if (currentSubmenu.title === "ELeNA") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>EleNa <img src='./icons/elena.png' alt='elena icon'></p><p>ELeNA<br><br><i>Currently in development</i><br><br>EleNa is a map-based web application that enables users to decide routes between geographical locations with the inclusion of elevation as a factor. The user has several options to choose from when calculating the route from the origin and the destination. They may select the shortest path with no elevation. The user may also input a percentage value of the shortest path, essentially an “offset” value, that they are willing to travel extra, and can select whether to maximize or minimize elevation. The route will be displayed depending on the user’s preferences.<br><br>The UI displays information about the chosen route, such as the elevation gain, elevation drop, distance, and approximate time taken to travel, and using OpenStreetMap’s API, the user is able to interact with the map.</p>";
+      popup.innerHTML = "<p class = 'title'>EleNa <img src='./icons/elena2.png' alt='elena icon'></p><p class='elena'>ELeNA<br><br>ELeNA is a map-based web application that enables users to decide routes between geographical locations based on elevation preference, and is within a user-specified percentage of the shortest path. ELeNA currently only considers elevation data within the Hampshire County area of Massachusetts, USA, as for university project purposes, we only required to store that data in the database, else we would've had to store several counties worth of elevation data. ELeNA uses OpenStreetMap’s API for for autocomplete functionality, the user would input the origin and destination addresses.<br><br>The user has several options to choose from when calculating the route from the origin and the destination. They may select the shortest path with no elevation. The user may also input a percentage value of the shortest path, essentially a value that limits the total distance between the two locations to x% of the shortest path, and can select whether to maximize or minimize elevation. The route will be displayed depending on the user’s preferences.<br><br>This software may be useful to those who need to plan a route based on elevation preferences, such as hikers, bikers, runners, or any outdoor enthusiasts.<br><br>The images to the left show a small, albeit non-neglible difference in the route between the two locations based on the elevation preference selected. In this case, the elevation factor only changed the very end of the route, hence the difference appears to be little. This is most likely a result of elevation not being much of a influence in this specific route.</p><img src='icons/elenaimage2.png' alt='elenaimage2' class='elena-image2'><img src='icons/elenaimage3.png' alt='elenaimage3' class='elena-image3'>";
       $('body').off('keyup');
     }
     // else if (currentSubmenu.title === "DynaBoard") {
@@ -334,13 +334,13 @@ function linkforward() {
     else if (currentSubmenu.title === "Web Programming") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Web Programming <img src='./icons/web.png' alt='web icon'></p><p>Web Programming<br><br><i>Currently taking</i><br><br>Develops web programming experience, including HTML, CSS, JavaScript, AJAX, JavaScript libraries and web security.</p>";
+      popup.innerHTML = "<p class = 'title'>Web Programming <img src='./icons/web.png' alt='web icon'></p><p>Web Programming<br><br>Develops web programming experience, including HTML, CSS, JavaScript, AJAX, JavaScript libraries and web security.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Practice and Applications of Data Management") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Practice and Applications of Data Management <img src='./icons/datamanagement.png' alt='datamanagement icon'></p><p>Practice and Applications of Data Management<br><br><i>Currently taking</i><br><br>Develops data management experience, including SQL, relational schema design, basic transaction implementation, and data visualization tools.</p>";
+      popup.innerHTML = "<p class = 'title'>Practice and Applications of Data Management <img src='./icons/datamanagement.png' alt='datamanagement icon'></p><p>Practice and Applications of Data Management<br><br>Develops data management experience, including SQL, relational schema design, basic transaction implementation, and data visualization tools.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Introduction to Computer Graphics") {
@@ -364,13 +364,13 @@ function linkforward() {
     else if (currentSubmenu.title === "Theory and Practice of Software Engineering") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Theory and Practice of Software Engineering <img src='./icons/engineering.png' alt='engineering icon'></p><p>Theory and Practice of Software Engineering<br><br><i>Currently taking</i><br><br>Develops software engineering experience, including requirements engineering, software testing, program analysis and automated software engineering.</p>";
+      popup.innerHTML = "<p class = 'title'>Theory and Practice of Software Engineering <img src='./icons/engineering.png' alt='engineering icon'></p><p>Theory and Practice of Software Engineering<br><br>Develops software engineering experience, including requirements engineering, software testing, program analysis and automated software engineering.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "University of Massachusetts Amherst") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>University of Massachusetts Amherst <img src='./icons/umass.png' alt='umass icon'></p><p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Expected Dec. 2023<br><br>Cumulative GPA of 3.62<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
+      popup.innerHTML = "<p class = 'title'>University of Massachusetts Amherst <img src='./icons/umass.png' alt='umass icon'></p><p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Expected Dec. 2023<br><br>Cumulative GPA of 3.68<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Canadian International School (Bangalore)") {

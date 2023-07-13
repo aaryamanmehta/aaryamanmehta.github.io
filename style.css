@@ -7,7 +7,7 @@ body {
   overflow: hidden;
   color: white;
   font-family: "PS3-rodin", sans-serif;
-	cursor: none;
+	/* cursor: none; */
 }
 
 #video {
@@ -47,7 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   background: -webkit-linear-gradient(253deg, rgb(46, 29, 158) 0%, rgb(21, 18, 84) 72%);
-	cursor: none;
+	/* cursor: none; */
 }
 #xmb {
   width: 100px;
@@ -77,7 +77,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
-	cursor: none;
+	/* cursor: none; */
 }
 #xmb li,
 #xmb ul {
@@ -100,7 +100,7 @@ body {
   opacity: 0.4;
   position: absolute;
   transition: all 0.3s;
-  cursor: none;
+  /* cursor: none; */
 }
 
 #xmb .cell.active {
@@ -132,7 +132,7 @@ body {
   text-align: left;
   text-shadow: 0px 0px 0px #ffffff;
   font-size: 20px;
-  cursor: none;
+  /* cursor: none; */
 	width: 500px;
 }
 
@@ -159,7 +159,7 @@ body {
 
 a {
   color: inherit;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .material-icons.xmb-icon {
@@ -171,7 +171,7 @@ a {
   padding-top: 15px;
 	width: 100px;
 	font-size: 15px;
-	cursor: none;
+	/* cursor: none; */
 }
 
 #xmb .cell.submenu.active label {
@@ -398,7 +398,42 @@ a {
   padding-left: 5%;
   padding-right: 50%;
   opacity: 0.8;
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.popup p.elena {
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 45%;
+  padding-right: 5%;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.popup img.elena-image2 {
+  /* // order all seam images to be vertically on top of each other */
+  position: absolute;
+  top: 23%;
+  left: 0;
+  right: 50%;
+  margin: auto;
+  width: auto;  
+  height: 26%;
+  display: block;
+  opacity: 0.8;
+}
+
+.popup img.elena-image3 {
+  /* // order all seam images to be vertically on top of each other */
+  position: absolute;
+  top: 51%;
+  left: 0;
+  right: 50%;
+  margin: auto;
+  width: auto;  
+  height: 26%;
+  display: block;
+  opacity: 0.8;
 }
 
 #landingPage {
