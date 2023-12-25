@@ -26,9 +26,10 @@ var model = {
       active: false,
       icon: "icons/projects.png",
       items: [
+        { title: "Tennis Club Project", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
+        { title: "Egyptian Parkour Unity Game", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
       { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
       { title: "ELeNA", subtitle: "", active: false, icon: "icons/elena2.png", href:"" },
-      // { title: "DynaBoard", subtitle: "", active: false, icon: "icons/dashboard.png", href: "" },
       { title: "Seam Carving", subtitle: "", active: false, icon: "icons/seam.png", href: "" },
       { title: "Ray Tracing", subtitle: "", active: false, icon: "icons/raytracing.png", href: "" },
       ]},
@@ -54,9 +55,11 @@ var model = {
         { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/algorithms.png", href:"" },
         { title: "Data Structures", subtitle: "", active: false, icon: "icons/datastructures.png", href: ""},
         { title: "Web Programming", subtitle: "", active: false, icon: "icons/web.png", href: ""},
+        { title: "Scalable Web Systems", subtitle: "", active: false, icon: "icons/web.png", href: ""},
         { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/datamanagement.png", href:"" },
         { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/engineering.png", href: "" },
         { title: "Introduction to Computer Graphics", subtitle: "", active: false, icon: "icons/graphics.png", href:"" },
+        { title: "Game Programming", subtitle: "", active: false, icon: "icons/web.png", href:"" },
         { title: "Artificial Intelligence", subtitle: "", active: false, icon: "icons/ai.png", href:"" },] },
 
     "Education": {
@@ -88,13 +91,23 @@ var model = {
       active: false,
       icon: "icons/skills.png",
       items: [
-        { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/htmlcss.png", href: "" },
         { title: "JavaScript", subtitle: "", active: false, icon: "icons/js.png", href: "" },
-        { title: "React.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
-        { title: "PostgreSQL", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
-        { title: "Node.JS", subtitle: "", active: false, icon: "icons/node.png", href: "" },
         { title: "Java", subtitle: "", active: false, icon: "icons/java.png", href: "" },
-        { title: "Python", subtitle: "", active: false, icon: "icons/python.png", href: "" }
+        { title: "Python", subtitle: "", active: false, icon: "icons/python.png", href: "" },
+        { title: "C#", subtitle: "", active: false, icon: "icons/python.png", href: "" },
+        { title: "Svelte", subtitle: "", active: false, icon: "icons/python.png", href: "" },
+        { title: "React.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
+        { title: "Next.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
+        { title: "Express.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
+        { title: "Node.JS", subtitle: "", active: false, icon: "icons/node.png", href: "" },
+        { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/htmlcss.png", href: "" },
+        { title: "Docker", subtitle: "", active: false, icon: "icons/node.png", href: "" },
+        { title: "PM2", subtitle: "", active: false, icon: "icons/node.png", href: "" },
+        { title: "SQL", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
+        { title: "ETL", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
+        { title: "Git", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
+        { title: "Jira", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
+        { title: "Unity", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
       ] },
 	} };
 
@@ -277,6 +290,18 @@ function linkforward() {
       popup.innerHTML = "<p class = 'title'>Aaryaman Mehta <img src='./icons/aaryaman.png' alt='aaryaman icon'></p> <p>Hi! I'm Aaryaman Mehta.<br><br>I'm a senior Computer Science student at UMass Amherst. I like to spend my free time at the gym, playing tennis, or gaming. I'm currently enjoying a playthrough of Elden Ring, though I've recently been playing a lot more Mario Kart and Mario Party with my friends. Since college, I've gained experience working with development teams on a number of software projects, collaborating with others to build systems that meet a variety of needs. I've particularly taken a liking to web development and front-end development! <br><br> As I near graduation, I am currently exploring opportunities in software engineering and am eager to contribute my skills to new projects and challenges. I'm always looking to learn and grow as a developer and would welcome the chance to discuss any opportunities that may be available.</p>";
       $('body').off('keyup');    
     }
+    else if (currentSubmenu.title === "Tennis Club Project") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p class = 'title'>Tennis Club Project <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p><p class='mmh'>Tennis Club Project<br><br>The Tennis Club Project is </p><video class='mmvideo' controls><source src='/icons/meetmehalfway.mp4' type='video/mp4'></video>";
+      $('body').off('keyup');    
+    }
+    else if (currentSubmenu.title === "Egyptian Parkour Unity Game") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p class = 'title'>Tennis Club Project <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p><p class='mmh'>Tennis Club Project<br><br>The Tennis Club Project is </p><video class='mmvideo' controls><source src='/icons/meetmehalfway.mp4' type='video/mp4'></video>";
+      $('body').off('keyup');    
+    }
     else if (currentSubmenu.title === "MeetMeHalfway") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
@@ -365,6 +390,18 @@ function linkforward() {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
       popup.innerHTML = "<p class = 'title'>Theory and Practice of Software Engineering <img src='./icons/engineering.png' alt='engineering icon'></p><p>Theory and Practice of Software Engineering<br><br>Develops software engineering experience, including requirements engineering, software testing, program analysis and automated software engineering.</p>";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Scalable Web Systems") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p class = 'title'>Scalable Web Systems <img src='./icons/datastructures.png' alt='datastructures icon'></p><p>Scalabe Web Systems<br><br>Yeeee.</p>";
+      $('body').off('keyup');
+    }
+    else if (currentSubmenu.title === "Game Programming") {
+      popup.classList.add("visible");
+      xmb.classList.add("invisible");
+      popup.innerHTML = "<p class = 'title'>Game Programming <img src='./icons/datastructures.png' alt='datastructures icon'></p><p>Game Programming<br><br>Yeeee.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "University of Massachusetts Amherst") {
