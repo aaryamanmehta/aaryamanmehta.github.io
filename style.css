@@ -325,7 +325,7 @@ a {
   padding-left: 5%;
   padding-right: 50%;
   opacity: 0.8;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .popup img.raytracing-image1 {
@@ -392,6 +392,30 @@ a {
   opacity: 0.8;
 }
 
+.popup video.tennisvideo {
+  position: absolute;
+  top: 26%;
+  left: 45%;
+  right: 0;
+  margin: auto;
+  width: auto;  
+  height: 50%;
+  display: block;
+  opacity: 0.8;
+}
+
+.popup video.gamevideo {
+  position: absolute;
+  top: 26%;
+  left: 0;
+  right: 45%;
+  margin: auto;
+  width: auto;  
+  height: 50%;
+  display: block;
+  opacity: 0.8;
+}
+
 .popup p.mmh {
   text-align: center;
   line-height: 1.5;
@@ -401,13 +425,31 @@ a {
   font-size: 13px;
 }
 
+.popup p.tennis {
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 5%;
+  padding-right: 55%;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.popup p.parkour {
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 55%;
+  padding-right: 5%;
+  opacity: 0.8;
+  font-size: 13px;
+}
+
 .popup p.elena {
   text-align: center;
   line-height: 1.5;
-  padding-left: 45%;
+  padding-left: 42%;
   padding-right: 5%;
   opacity: 0.8;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .popup img.elena-image2 {

@@ -26,8 +26,8 @@ var model = {
       active: false,
       icon: "icons/projects.png",
       items: [
-        { title: "Tennis Club Project", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
-        { title: "Egyptian Parkour Unity Game", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
+        { title: "Tennis Club Project", subtitle: "", active: false, icon: "icons/tennis.png", href:"" },
+        { title: "Egyptian Parkour Unity Game", subtitle: "", active: false, icon: "icons/parkour.png", href:"" },
       { title: "MeetMeHalfway", subtitle: "", active: false, icon: "icons/meetmehalfway.png", href:"" },
       { title: "ELeNA", subtitle: "", active: false, icon: "icons/elena2.png", href:"" },
       { title: "Seam Carving", subtitle: "", active: false, icon: "icons/seam.png", href: "" },
@@ -55,11 +55,11 @@ var model = {
         { title: "Introduction to Algorithms", subtitle: "", active: false, icon: "icons/algorithms.png", href:"" },
         { title: "Data Structures", subtitle: "", active: false, icon: "icons/datastructures.png", href: ""},
         { title: "Web Programming", subtitle: "", active: false, icon: "icons/web.png", href: ""},
-        { title: "Scalable Web Systems", subtitle: "", active: false, icon: "icons/web.png", href: ""},
+        { title: "Scalable Web Systems", subtitle: "", active: false, icon: "icons/scalable.png", href: ""},
         { title: "Practice and Applications of Data Management", subtitle: "", active: false, icon: "icons/datamanagement.png", href:"" },
         { title: "Theory and Practice of Software Engineering", subtitle: "", active: false, icon: "icons/engineering.png", href: "" },
         { title: "Introduction to Computer Graphics", subtitle: "", active: false, icon: "icons/graphics.png", href:"" },
-        { title: "Game Programming", subtitle: "", active: false, icon: "icons/web.png", href:"" },
+        { title: "Game Programming", subtitle: "", active: false, icon: "icons/game.png", href:"" },
         { title: "Artificial Intelligence", subtitle: "", active: false, icon: "icons/ai.png", href:"" },] },
 
     "Education": {
@@ -94,20 +94,19 @@ var model = {
         { title: "JavaScript", subtitle: "", active: false, icon: "icons/js.png", href: "" },
         { title: "Java", subtitle: "", active: false, icon: "icons/java.png", href: "" },
         { title: "Python", subtitle: "", active: false, icon: "icons/python.png", href: "" },
-        { title: "C#", subtitle: "", active: false, icon: "icons/python.png", href: "" },
+        { title: "C#", subtitle: "", active: false, icon: "icons/csharp.png", href: "" },
         { title: "Svelte", subtitle: "", active: false, icon: "icons/python.png", href: "" },
-        { title: "React.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
-        { title: "Next.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
-        { title: "Express.JS", subtitle: "", active: false, icon: "icons/react.png", href: "" },
-        { title: "Node.JS", subtitle: "", active: false, icon: "icons/node.png", href: "" },
+        { title: "React", subtitle: "", active: false, icon: "icons/react.png", href: "" },
+        { title: "Next.js", subtitle: "", active: false, icon: "icons/next.png", href: "" },
+        { title: "Express.js", subtitle: "", active: false, icon: "icons/express.png", href: "" },
+        { title: "Node.js", subtitle: "", active: false, icon: "icons/node.png", href: "" },
         { title: "HTML/CSS", subtitle: "", active: false, icon: "icons/htmlcss.png", href: "" },
-        { title: "Docker", subtitle: "", active: false, icon: "icons/node.png", href: "" },
-        { title: "PM2", subtitle: "", active: false, icon: "icons/node.png", href: "" },
+        { title: "Docker", subtitle: "", active: false, icon: "icons/docker.png", href: "" },
+        { title: "PM2", subtitle: "", active: false, icon: "icons/pm2.png", href: "" },
         { title: "SQL", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
-        { title: "ETL", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
-        { title: "Git", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
-        { title: "Jira", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
-        { title: "Unity", subtitle: "", active: false, icon: "icons/postgres.png", href: "" },
+        { title: "Git", subtitle: "", active: false, icon: "icons/git.png", href: "" },
+        { title: "Jira", subtitle: "", active: false, icon: "icons/jira.png", href: "" },
+        { title: "Unity", subtitle: "", active: false, icon: "icons/unity.png", href: "" },
       ] },
 	} };
 
@@ -287,19 +286,19 @@ function linkforward() {
   else if (currentSubmenu.title === "Aaryaman Mehta") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Aaryaman Mehta <img src='./icons/aaryaman.png' alt='aaryaman icon'></p> <p>Hi! I'm Aaryaman Mehta.<br><br>I'm a senior Computer Science student at UMass Amherst. I like to spend my free time at the gym, playing tennis, or gaming. I'm currently enjoying a playthrough of Elden Ring, though I've recently been playing a lot more Mario Kart and Mario Party with my friends. Since college, I've gained experience working with development teams on a number of software projects, collaborating with others to build systems that meet a variety of needs. I've particularly taken a liking to web development and front-end development! <br><br> As I near graduation, I am currently exploring opportunities in software engineering and am eager to contribute my skills to new projects and challenges. I'm always looking to learn and grow as a developer and would welcome the chance to discuss any opportunities that may be available.</p>";
+      popup.innerHTML = "<p class = 'title'>Aaryaman Mehta <img src='./icons/aaryaman.png' alt='aaryaman icon'></p> <p>Hi! I'm Aaryaman Mehta.<br><br>I received my Bachelor's in Computer Science at UMass Amherst from September 2020 to December 2023. I like to spend my free time at the gym, listening to music, playing tennis, or gaming. I'm currently enjoying a playthrough of Elden Ring, though I've recently been playing a lot more Mario Kart and Mario Party with my friends. Since college, I've gained experience working with development teams on a number of software projects, collaborating with others to build systems that meet a variety of needs. I've particularly taken a liking to web development and front-end development! <br><br> As a recent graduate, I am currently exploring opportunities in software engineering and am eager to contribute my skills to new projects and challenges. I'm always looking to learn and grow as a developer and would welcome the chance to discuss any opportunities that may be available.</p>";
       $('body').off('keyup');    
     }
     else if (currentSubmenu.title === "Tennis Club Project") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Tennis Club Project <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p><p class='mmh'>Tennis Club Project<br><br>The Tennis Club Project is </p><video class='mmvideo' controls><source src='/icons/meetmehalfway.mp4' type='video/mp4'></video>";
+      popup.innerHTML = "<p class = 'title'>Tennis Club Project <img src='./icons/tennis.png' alt='tennis club icon'></p><p class='tennis'>Tennis Club Project<br><br>The UMass Tennis Club Project is a comprehensive web application designed for the University of Massachusetts Tennis Club. The primary goal is to enhance the club's organization beyond the existing Discord server.<br><br>The website utilizes Svelte for dynamic UI and Express.js for microservices API, featuring three microservices: user-service, tournament-service, and notification-service. An event-bus facilitates communication among these microservices.<br><br>The Home page provides general club information, while the Membership page details membership benefits and payment information. The League page allows users to sign up for tournaments based on their ranking, with email notifications upon successful registration. The Players page lists all registered players, allowing users to view details and contact others for casual matches. The Profile page enables users to edit their information, with email notifications for updates. The Login page facilitates user authentication, albeit without passwords for the project's scope.<br><br>The tech stack includes Docker, Docker Compose, and PM2 for containerization, deployment, and scalability testing. I used Supabase for simple database management. The application aims to provide an aesthetically pleasing and scalable platform for UMass Tennis Club members to access information, register for events, and connect with fellow players.<br><br>The video to the right is a demonstration of the application for the class submission. Please watch it to get an idea of how the application works!</p><video class='tennisvideo' controls><source src='/icons/tennis.mp4' type='video/mp4'></video>";
       $('body').off('keyup');    
     }
     else if (currentSubmenu.title === "Egyptian Parkour Unity Game") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Tennis Club Project <img src='./icons/meetmehalfway.png' alt='mmhw icon'></p><p class='mmh'>Tennis Club Project<br><br>The Tennis Club Project is </p><video class='mmvideo' controls><source src='/icons/meetmehalfway.mp4' type='video/mp4'></video>";
+      popup.innerHTML = "<p class = 'title'>Egyptian Parkour Unity Game <img src='./icons/parkour.png' alt='egyptian parkour game icon'></p><p class='parkour'>Egyptian Parkour Unity Game<br><br>This Unity project is an Educational Parkour game set in Ancient Egypt. The game provides an immersive learning experience by integrating Egyptian historical content into the gameplay. Users must go through parkour challenges in order to retrieve 6 hidden treasures, each historically relevant and informative. The game concludes with an educational quiz, serving as a tool for assessing and reinforcing the knowledge acquired during the gameplay. The aim is to offer an engaging and educational experience through a blend of gaming and historical content.<br><br>I worked along a partner in this project, and my responsibilities primarily involved the implementation of parkour movements, such as ledge grabbing, sliding, and wall running (C# scripts). Additionally, I took charge of designing the parkour map, strategically crafting an environment that would challenge players to utilize these parkour skills effectively in pursuit of the 6 hidden treasures.<br><br>On the other hand, my partner responsible for retrieving assets, creating the environment for which the parkour map was made upon, mummy AI and spawning, treasure implementation, and lastly, the quiz at the end of the game.<br><br>Please check out the video to the left, demonstrating the design and gameplay. </p><video class='gamevideo' controls><source src='/icons/parkour.mp4' type='video/mp4'></video>";
       $('body').off('keyup');    
     }
     else if (currentSubmenu.title === "MeetMeHalfway") {
@@ -329,25 +328,25 @@ function linkforward() {
     else if (currentSubmenu.title === "Ray Tracing") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Ray Tracing <img src='./icons/raytracing.png' alt='raytracing icon'></p> <p class='raytracing'>Ray Tracing<br><br>The project aims to create a simple ray tracer that can generate realistic images by simulating the physics of light. It uses a set of mathematical equations to simulate the path of light from a light source to an observer's eye.<br><br>The ray tracing technique works by casting rays from the observer's eye through each pixel of the image plane into the scene. Each ray is tested for intersection with objects in the scene, and the resulting color of the pixel is computed based on the properties of the intersected object and the light sources in the scene.<br><br>The project implements the basic functionality of ray tracing, including ray-object intersection, reflection, and refraction. It uses the THREE.js library to create and render 3D objects in a scene. The program also includes ambient occlusion, which creates the effect of shadows in a scene by simulating the occlusion of light from objects to create more realistic images.<br><br>The project implements the basic functionality of ray tracing, including ray-object intersection, reflection, and refraction. It uses the THREE.js library to create and render 3D objects in a scene. The program also includes ambient occlusion, which creates the effect of shadows in a scene by simulating the occlusion of light from objects to create more realistic images.</p><img src='icons/raytracingimage1.png' alt='raytracingimage1' class='raytracing-image1'><img src='icons/raytracingimage2.png' alt='raytracingimage2' class='raytracing-image2'><img src='icons/raytracingimage3.png' alt='raytracingimage3' class='raytracing-image3'><img src='icons/raytracingimage4.png' alt='raytracingimage4' class='raytracing-image4'>";
+      popup.innerHTML = "<p class = 'title'>Ray Tracing <img src='./icons/raytracing.png' alt='raytracing icon'></p> <p class='raytracing'>Ray Tracing<br><br>The project aims to create a simple ray tracer that can generate realistic images by simulating the physics of light. It uses a set of mathematical equations to simulate the path of light from a light source to an observer's eye.<br><br>The ray tracing technique works by casting rays from the observer's eye through each pixel of the image plane into the scene. Each ray is tested for intersection with objects in the scene, and the resulting color of the pixel is computed based on the properties of the intersected object and the light sources in the scene.<br><br>The project implements the basic functionality of ray tracing, including ray-object intersection, reflection, and refraction. It uses the THREE.js library to create and render 3D objects in a scene. The program also includes ambient occlusion, which creates the effect of shadows in a scene by simulating the occlusion of light from objects to create more realistic images</p><img src='icons/raytracingimage1.png' alt='raytracingimage1' class='raytracing-image1'><img src='icons/raytracingimage2.png' alt='raytracingimage2' class='raytracing-image2'><img src='icons/raytracingimage3.png' alt='raytracingimage3' class='raytracing-image3'><img src='icons/raytracingimage4.png' alt='raytracingimage4' class='raytracing-image4'>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Customer Service Associate") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Customer Service Associate <img src='./icons/csa.png' alt='csa icon'> </p><p>Customer Service Associate at Residential Life Services at UMass Amherst<br><br>Amherst, MA<br><br>Feb. 2023 - Present<br><br>As a CSA, I was responsible for assisting with the management of daily operations, including check-ins/check-outs, lock outs, lost keys, maintenance requests, and delivering mail and packages.</p>";
+      popup.innerHTML = "<p class = 'title'>Customer Service Associate <img src='./icons/csa.png' alt='csa icon'> </p><p>Customer Service Associate at Residential Life Services at UMass Amherst<br><br>Amherst, MA<br><br>Feb. 2023 - Dec. 2023<br><br>As a CSA, I was responsible for assisting with the management of daily operations using Salesforce and SqBx, including check-ins/check-outs, lock outs, lost keys, maintenance requests, and delivering mail and packages.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Software Development Team Intern") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Software Development Team Intern <img src='./icons/engineer.png' alt='engineer icon'></p> <p>Software Development Team Intern at ISO New England (ISO-NE)<br><br>Amherst, MA<br><br>Sep. 2022 - Dec. 2022<br><br>At ISO-NE, I collaborated with a team of software developers in Scrum to create a dynamic data comparison GUI that visualizes LMP data.<br><br>The GUI is a dashboard, titled DynaBoard, that performs sanity checks to ensure consistency between a provided data model and a simulation data model, and provides statistical analysis of models. We used Supabase (PostgreSQL DB), Next.JS, and Plotly.JS as a charting library in development.</p>";
+      popup.innerHTML = "<p class = 'title'>Software Development Team Intern <img src='./icons/engineer.png' alt='engineer icon'></p> <p>Software Development Team Intern at ISO New England (ISO-NE)<br><br>Amherst, MA<br><br>Sept. 2022 - Dec. 2022<br><br>At ISO-NE, I collaborated with a team of software developers in Scrum to create a dynamic data comparison GUI that visualizes LMP data.<br><br>The GUI is a dashboard, titled DynaBoard, that performs sanity checks to ensure consistency between a provided data model and a simulation data model, and provides statistical analysis of models. We used Supabase (PostgreSQL DB), Next.js, and Plotly.js as a charting library in development.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Front-End Developer Intern") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Front-End Developer Intern <img src='./icons/frontend.png' alt='frontend icon'></p> <p>Front-End Developer Intern at Aspec Sciré<br><br>Bangalore, IND<br><br>May. 2022 - Aug. 2022<br><br>As it was my first internship as a novice programmer, I undertook formal training in React by mentors at Aspec Sciré in order to migrate from Mapbox to Openlayers in Vimana, a platform for processing, visualizing, storing and organizing data collected from drones.</p>";
+      popup.innerHTML = "<p class = 'title'>Front-End Developer Intern <img src='./icons/frontend.png' alt='frontend icon'></p> <p>Front-End Developer Intern at Aspec Sciré<br><br>Bangalore, IND<br><br>May 2022 - Aug. 2022<br><br>As it was my first internship as a novice programmer, I undertook formal training in React by mentors at Aspec Sciré in order to migrate from Mapbox to Openlayers in Vimana, a platform for processing, visualizing, storing and organizing data collected from drones.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Introduction to Algorithms") {
@@ -395,19 +394,19 @@ function linkforward() {
     else if (currentSubmenu.title === "Scalable Web Systems") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Scalable Web Systems <img src='./icons/datastructures.png' alt='datastructures icon'></p><p>Scalabe Web Systems<br><br>Yeeee.</p>";
+      popup.innerHTML = "<p class = 'title'>Scalable Web Systems <img src='./icons/scalable.png' alt='scalable icon'></p><p>Scalabe Web Systems<br><br>Develops proficiency in defining modern distributed web application architecture concepts and addressing scalability issues. Acquire knowledge about the asynchronous nature of JavaScript, event-loop models in browsers and Node.js, and their impact on web application scalability. Implement micro-service-based web applications, emphasizing the usage of Docker containers. Apply languages like TypeScript and modern UI frameworks to develop scalable web applications.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Game Programming") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>Game Programming <img src='./icons/datastructures.png' alt='datastructures icon'></p><p>Game Programming<br><br>Yeeee.</p>";
+      popup.innerHTML = "<p class = 'title'>Game Programming <img src='./icons/game.png' alt='game icon'></p><p>Game Programming<br><br>Introduces computer game development, including scene modeling, physics engines, animation, character rigging, game AI, game UI, audio effects and networking.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "University of Massachusetts Amherst") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>University of Massachusetts Amherst <img src='./icons/umass.png' alt='umass icon'></p><p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Expected Dec. 2023<br><br>Cumulative GPA of 3.68<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
+      popup.innerHTML = "<p class = 'title'>University of Massachusetts Amherst <img src='./icons/umass.png' alt='umass icon'></p><p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Graduated Sept. 2020 - Dec. 2023<br><br>Cumulative GPA of 3.6<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Canadian International School (Bangalore)") {
