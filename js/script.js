@@ -406,7 +406,7 @@ function linkforward() {
     else if (currentSubmenu.title === "University of Massachusetts Amherst") {
       popup.classList.add("visible");
       xmb.classList.add("invisible");
-      popup.innerHTML = "<p class = 'title'>University of Massachusetts Amherst <img src='./icons/umass.png' alt='umass icon'></p><p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Graduated Sept. 2020 - Dec. 2023<br><br>Cumulative GPA of 3.6<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
+      popup.innerHTML = "<p class = 'title'>University of Massachusetts Amherst <img src='./icons/umass.png' alt='umass icon'></p><p>University of Massachusetts Amherst<br><br>Amherst, MA<br><br>Graduated Sept. 2020 - Dec. 2023<br><br>Cumulative GPA of 3.57<br><br>I am a recipient of the Chancellor’s Award Scholarship, and I have been on the Dean's List for all my semesters in college.</p>";
       $('body').off('keyup');
     }
     else if (currentSubmenu.title === "Canadian International School (Bangalore)") {
